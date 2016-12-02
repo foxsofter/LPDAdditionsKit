@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LPDAdditionsKit_Example' do
+  pod 'LPDAdditionsKit', :path => '../'
+
+  target 'LPDAdditionsKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
