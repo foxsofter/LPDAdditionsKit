@@ -1,0 +1,16 @@
+PODS:
+  - LPDAdditionsKit (0.1.0)
+
+DEPENDENCIES:
+  - LPDAdditionsKit (from `../`)
+
+EXTERNAL SOURCES:
+  LPDAdditionsKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LPDAdditionsKit: e06b1d1308eb3fbe89133ee3ed570f23f9d132f1
+
+PODFILE CHECKSUM: 7f223903d63952bae705e44cf59fd87b80350b3b
+
+COCOAPODS: 1.1.1
