@@ -29,7 +29,6 @@
 		4399255B5C69B28BDFCA25966DDBF8C0 /* NSObject+LPDSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D77EE1B98331C85B014C47E4C8EE08 /* NSObject+LPDSwizzling.m */; };
 		4D4A53E020384C9C982BA969D399899C /* NSObject+LPDSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFCB10F781D4572C98BD29A63BE55F9 /* NSObject+LPDSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FA8C78BE6801253684C15183EB9D77F /* RSA.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC9DAB38D47D28AA2E264072FE3FBB5 /* RSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FAE6AF36153EC8993A8B56C649AFD68 /* LPDLocalNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A85301BE0F38765D25D39944E2E4C01 /* LPDLocalNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		511778A967E2735FD2B8AF11D3B9B815 /* UIView+LPDAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F757001BBF2FB059D22C0AD33ECB38 /* UIView+LPDAccessor.m */; };
 		51B2937E09F2484FD552D6F59461B7AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		538DFE98E0F83816DEC0E2FAFDE01CC1 /* NSMutableArray+LPDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F150DCF82574B53F1B0ACD4BB56C34DB /* NSMutableArray+LPDQueue.m */; };
@@ -67,7 +66,6 @@
 		D1A2B9DA9216D74AFC891231F61B96D7 /* NSString+LPDAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8F3C95E83E04CEA89431E2F1263158 /* NSString+LPDAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9E2E479FBBDE376DB9D37FB4AD04E5C /* Pods-LPDAdditionsKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7221136CB9AFD92FD3B040E819FB118A /* Pods-LPDAdditionsKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB5C5387046883B440A602FDE91AD2C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		ECCBBA89B46072EA3196F9FB237A2BFB /* LPDLocalNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A98DC8FA9FD5991C043F2F5483995685 /* LPDLocalNotificationCenter.m */; };
 		EDE9C7A35945EF45B7D82C2CEB466646 /* UIButton+LPDAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B707EB478374D650CD7E2BC93F9B47F /* UIButton+LPDAddition.m */; };
 		F1C3B33B585A6688DEB587E60ACD6E50 /* LPDAdditionsKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC061F320CCC3C6F5E85FD1CC0DC34E9 /* LPDAdditionsKit-dummy.m */; };
 		FBD9E0601F21A0FCD00E8FCDEE29F8F7 /* NSMutableArray+LPDQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D1BD774C5E2A68C080FE9A8EFD0486F0 /* NSMutableArray+LPDQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -138,10 +136,8 @@
 		94B72F564821D40E4D85F119B8CEC1A0 /* NSObject+LPDThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LPDThread.h"; sourceTree = "<group>"; };
 		98E2C030FDC2196330A0B1BF2DFC2691 /* NSArray+LPDRandom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+LPDRandom.h"; sourceTree = "<group>"; };
 		997E56D66125158BE5BA9682E5BFE456 /* NSObject+LPDAssociatedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LPDAssociatedObject.h"; sourceTree = "<group>"; };
-		9A85301BE0F38765D25D39944E2E4C01 /* LPDLocalNotificationCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDLocalNotificationCenter.h; sourceTree = "<group>"; };
 		9EADAE0F0E3E8109060FD507244058CD /* Pods-LPDAdditionsKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LPDAdditionsKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9F8F3C95E83E04CEA89431E2F1263158 /* NSString+LPDAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+LPDAddition.h"; sourceTree = "<group>"; };
-		A98DC8FA9FD5991C043F2F5483995685 /* LPDLocalNotificationCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDLocalNotificationCenter.m; sourceTree = "<group>"; };
 		B04BBC353126B53A27652F6BB9E2D533 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1DE80B16786AB9315E9D92DF2B0B729 /* UIColor+LPDAddtion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LPDAddtion.m"; sourceTree = "<group>"; };
 		B6AFBB48703214F055A86D36F4A60999 /* NSCharacterSet+LPDAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+LPDAddition.h"; sourceTree = "<group>"; };
@@ -258,8 +254,6 @@
 				1E0F590E24FDBF1D80C23ECBDB6A9722 /* LPDAdditionsKit.h */,
 				2D68686AC05EF6795AE996480E87AB36 /* LPDLabel.h */,
 				48DEE64085582D1CBF4DCC87C5E605D2 /* LPDLabel.m */,
-				9A85301BE0F38765D25D39944E2E4C01 /* LPDLocalNotificationCenter.h */,
-				A98DC8FA9FD5991C043F2F5483995685 /* LPDLocalNotificationCenter.m */,
 				98E2C030FDC2196330A0B1BF2DFC2691 /* NSArray+LPDRandom.h */,
 				C3637E536F5963C8870170F7046F9CB4 /* NSArray+LPDRandom.m */,
 				B6AFBB48703214F055A86D36F4A60999 /* NSCharacterSet+LPDAddition.h */,
@@ -394,7 +388,6 @@
 				C93DFD23EAD8363D9AD2E673FCC62B72 /* LPDAdditionsKit.h in Headers */,
 				B2E7F733CC66E491C5010FE2AAA182E0 /* LPDAdditionsKit-umbrella.h in Headers */,
 				1922DBA84A224B49D0FBDC8F00323D8F /* LPDLabel.h in Headers */,
-				4FAE6AF36153EC8993A8B56C649AFD68 /* LPDLocalNotificationCenter.h in Headers */,
 				96132D115A432F8190E7D07ED6E0EF7A /* NSArray+LPDRandom.h in Headers */,
 				9D89CAEDE9C55E76B903877DCB46DB10 /* NSCharacterSet+LPDAddition.h in Headers */,
 				8DE17A789506BC0D7E480DEBC77A0087 /* NSDate+LPDNSDateRFC1123.h in Headers */,
@@ -545,7 +538,6 @@
 			files = (
 				F1C3B33B585A6688DEB587E60ACD6E50 /* LPDAdditionsKit-dummy.m in Sources */,
 				2B734BADB7C2DE01F981BF09F8214C99 /* LPDLabel.m in Sources */,
-				ECCBBA89B46072EA3196F9FB237A2BFB /* LPDLocalNotificationCenter.m in Sources */,
 				1841EE0D9A010571973D16F8A8CB2703 /* NSArray+LPDRandom.m in Sources */,
 				57224BCA581B9C6BA90C6142A9691A34 /* NSCharacterSet+LPDAddition.m in Sources */,
 				31608A7CF47C57E8BEA3498A9D96B7CD /* NSDate+LPDNSDateRFC1123.m in Sources */,
