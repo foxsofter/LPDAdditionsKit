@@ -4,7 +4,7 @@
 //
 //  Created by foxsofter on 15/1/21.
 //  Copyright (c) 2015年 foxsofter. All rights reserved.
-//
+//  **************  对performSelector进行扩展，并添加performBlock **************
 
 #import <Foundation/Foundation.h>
 
@@ -17,18 +17,18 @@
 
 #pragma mark - NSObject performSelector with multi parameter
 
-- (id)performSelector:(SEL)selector withObject:(id)p1 withObject:(id)p2 withObject:(id)p3;
+- (id)lpd_performSelector:(SEL)selector withObject:(id)p1 withObject:(id)p2 withObject:(id)p3;
 
-- (id)performSelector:(SEL)selector withObject:(id)p1 withObject:(id)p2 withObject:(id)p3 withObject:(id)p4;
+- (id)lpd_performSelector:(SEL)selector withObject:(id)p1 withObject:(id)p2 withObject:(id)p3 withObject:(id)p4;
 
-- (id)performSelector:(SEL)selector
+- (id)lpd_performSelector:(SEL)selector
            withObject:(id)p1
            withObject:(id)p2
            withObject:(id)p3
            withObject:(id)p4
            withObject:(id)p5;
 
-- (id)performSelector:(SEL)selector
+- (id)lpd_performSelector:(SEL)selector
            withObject:(id)p1
            withObject:(id)p2
            withObject:(id)p3
@@ -36,7 +36,7 @@
            withObject:(id)p5
            withObject:(id)p6;
 
-- (id)performSelector:(SEL)selector
+- (id)lpd_performSelector:(SEL)selector
            withObject:(id)p1
            withObject:(id)p2
            withObject:(id)p3
@@ -47,24 +47,24 @@
 
 #pragma mark - NSObject performSelector with multi parameter and delay
 
-- (void)performSelector:(SEL)selector afterDelay:(NSTimeInterval)delay;
+- (void)lpd_performSelector:(SEL)selector afterDelay:(NSTimeInterval)delay;
 
-- (void)performSelector:(SEL)selector withObject:(id)p1 withObject:(id)p2 afterDelay:(NSTimeInterval)delay;
+- (void)lpd_performSelector:(SEL)selector withObject:(id)p1 withObject:(id)p2 afterDelay:(NSTimeInterval)delay;
 
-- (void)performSelector:(SEL)selector
+- (void)lpd_performSelector:(SEL)selector
              withObject:(id)p1
              withObject:(id)p2
              withObject:(id)p3
              afterDelay:(NSTimeInterval)delay;
 
-- (void)performSelector:(SEL)selector
+- (void)lpd_performSelector:(SEL)selector
              withObject:(id)p1
              withObject:(id)p2
              withObject:(id)p3
              withObject:(id)p4
              afterDelay:(NSTimeInterval)delay;
 
-- (void)performSelector:(SEL)selector
+- (void)lpd_performSelector:(SEL)selector
              withObject:(id)p1
              withObject:(id)p2
              withObject:(id)p3
@@ -72,7 +72,7 @@
              withObject:(id)p5
              afterDelay:(NSTimeInterval)delay;
 
-- (void)performSelector:(SEL)selector
+- (void)lpd_performSelector:(SEL)selector
              withObject:(id)p1
              withObject:(id)p2
              withObject:(id)p3
@@ -81,7 +81,7 @@
              withObject:(id)p6
              afterDelay:(NSTimeInterval)delay;
 
-- (void)performSelector:(SEL)selector
+- (void)lpd_performSelector:(SEL)selector
              withObject:(id)p1
              withObject:(id)p2
              withObject:(id)p3
@@ -93,8 +93,8 @@
 
 #pragma mark - NSObject performBlock
 
-- (void)performBlock:(void (^)(void))block;
+- (void)lpd_performBlock:(void (^)(void))block;
 
-- (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
+- (void)lpd_performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
 
 @end

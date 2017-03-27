@@ -15,6 +15,6 @@
  *
  *  @param cls class of subview
  */
-- (NSArray *)subviewsWithClass:(Class)cls;
+- (NSArray *)lpd_subviewsWithClass:(Class)cls;
 
 @end

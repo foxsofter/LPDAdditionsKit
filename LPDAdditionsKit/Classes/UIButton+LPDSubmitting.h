@@ -4,7 +4,7 @@
 //
 //  Created by foxsofter on 15/4/2.
 //  Copyright (c) 2015年 foxsofter. All rights reserved.
-//
+//  ************** 为UIButton添加菊花 **************
 
 #import <UIKit/UIKit.h>
 
@@ -18,19 +18,19 @@
 /**
  *  @brief  按钮点击后，禁用按钮并居中显示ActivityIndicator
  */
-- (void)beginSubmitting;
+- (void)lpd_beginSubmitting;
 
 /**
  *  @brief  按钮点击后，禁用按钮并在按钮上显示ActivityIndicator，以及title
  *
  *  @param title 按钮上显示的文字
  */
-- (void)beginSubmitting:(NSString *)title;
+- (void)lpd_beginSubmitting:(NSString *)title;
 
 /**
  *  @brief  按钮点击后，恢复按钮点击前的状态
  */
-- (void)endSubmitting;
+- (void)lpd_endSubmitting;
 
 /**
  *  @brief  按钮是否正在提交中

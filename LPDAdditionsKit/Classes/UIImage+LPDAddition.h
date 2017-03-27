@@ -4,7 +4,7 @@
 //
 //  Created by foxsofter on 15/9/23.
 //  Copyright © 2015年 foxsofter. All rights reserved.
-//
+//  ************** image相关 **************
 
 #import <UIKit/UIKit.h>
 
@@ -17,7 +17,7 @@
  *
  *  @return 如果源视图为nil，则返回nil
  */
-+ (UIImage *)createImageFromView:(UIView *)sourceView;
++ (UIImage *)lpd_createImageFromView:(UIView *)sourceView;
 
 /**
  *  @brief  根据颜色生成图片，默认size为{1.f, 1.f}
@@ -26,7 +26,7 @@
  *
  *  @return 返回图片
  */
-+ (UIImage *)createImageWithColor:(UIColor *)color;
++ (UIImage *)lpd_createImageWithColor:(UIColor *)color;
 
 /**
  *  @brief  根据颜色和传入的size生成图片
@@ -36,7 +36,7 @@
  *
  *  @return 返回图片
  */
-+ (UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)lpd_createImageWithColor:(UIColor *)color size:(CGSize)size;
 
 /**
  *  @brief 设置图片的透明度
@@ -45,7 +45,7 @@
  *
  *  @return 返回处理后的图片
  */
-- (UIImage *)imageWithAlpha:(CGFloat)alpha;
+- (UIImage *)lpd_imageWithAlpha:(CGFloat)alpha;
 
 /**
  *  @brief 设置图片的size
@@ -54,6 +54,6 @@
  *
  *  @return 返回改变size之后的图片
  */
-- (UIImage *)resizeTo:(CGSize)size;
+- (UIImage *)lpd_resizeTo:(CGSize)size;
 
 @end

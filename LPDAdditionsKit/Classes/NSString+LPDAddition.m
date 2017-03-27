@@ -4,13 +4,13 @@
 //
 //  Created by foxsofter on 15/11/26.
 //  Copyright © 2015年 foxsofter. All rights reserved.
-//
+//  ************** 判空，逆置等 **************
 
 #import "NSString+LPDAddition.h"
 
 @implementation NSString (LPDAddition)
 
-- (NSString *)reverse {
+- (NSString *)lpd_reverse {
   NSMutableString *reversedString = [NSMutableString string];
   NSInteger charIndex = [self length];
   while (charIndex > 0) {
@@ -21,27 +21,27 @@
   return [reversedString copy];
 }
 
-- (NSString *)stringByRemovingWithPattern:(NSString *)patternString {
+- (NSString *)lpd_stringByRemovingWithPattern:(NSString *)patternString {
   NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:patternString
                                                                          options:NSRegularExpressionCaseInsensitive
                                                                            error:nil];
   return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, [self length]) withTemplate:@""];
 }
 
-- (NSMutableAttributedString *)adjustTextColor:(UIColor *)color range:(NSRange)range {
+- (NSMutableAttributedString *)lpd_adjustTextColor:(UIColor *)color range:(NSRange)range {
   NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self];
   [attributedString setAttributes:@{ NSForegroundColorAttributeName: color } range:range];
   return attributedString;
 }
 
-- (BOOL)isEmpty {
+- (BOOL)lpd_isEmpty {
   NSString *string =
     [[self stringByReplacingOccurrencesOfString:@" " withString:@""] stringByReplacingOccurrencesOfString:@"\n"
                                                                                                 withString:@""];
   return !string.length;
 }
 
-- (BOOL)containsString:(NSString *)str {
+- (BOOL)lpd_containsString:(NSString *)str {
   NSRange range = [self rangeOfString:str];
   return range.length != 0;
 }

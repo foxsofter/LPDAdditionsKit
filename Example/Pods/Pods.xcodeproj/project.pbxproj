@@ -14,13 +14,10 @@
 		137EDE4D46B028AD6B3FFC6F52465871 /* UINavigationItem+LPDAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90C12A6AB266879E54CFED1785368A /* UINavigationItem+LPDAddition.m */; };
 		13E6668ECC5C4868319E142A11F175F0 /* UIView+LPDFindSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A151638D2B48C40F4B5CBD0E715797 /* UIView+LPDFindSubView.m */; };
 		1841EE0D9A010571973D16F8A8CB2703 /* NSArray+LPDRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = C3637E536F5963C8870170F7046F9CB4 /* NSArray+LPDRandom.m */; };
-		1922DBA84A224B49D0FBDC8F00323D8F /* LPDLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D68686AC05EF6795AE996480E87AB36 /* LPDLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A09633F705096CB29F928795F60CC46 /* UIView+LPDBorders.m in Sources */ = {isa = PBXBuildFile; fileRef = 8983335EED9CD502341004B7ABFA9941 /* UIView+LPDBorders.m */; };
-		23F521A9232F251341D0F397F71F826A /* UIScreen+LPDAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C9708025A2111727FD1B80BC05236B /* UIScreen+LPDAccessor.m */; };
 		2662F27CF475925FFB833C934000FA96 /* Pods-LPDAdditionsKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EB1BBE8A71A458FE70341EE3477F54 /* Pods-LPDAdditionsKit_Tests-dummy.m */; };
 		2901578594F90EF5C1F4BE84DB40BAC6 /* NSObject+LPDThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A32E7E965D14F62A9FF1B186EF30E /* NSObject+LPDThread.m */; };
 		29F8F0B3CDA6A4DF8343D5EF92673941 /* UIButton+LPDAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = EA74CDD7C9EB54E787F600B92B7713E4 /* UIButton+LPDAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B734BADB7C2DE01F981BF09F8214C99 /* LPDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DEE64085582D1CBF4DCC87C5E605D2 /* LPDLabel.m */; };
 		31608A7CF47C57E8BEA3498A9D96B7CD /* NSDate+LPDNSDateRFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F57A38C7D8C3672AF2ACA0D67B7BAC /* NSDate+LPDNSDateRFC1123.m */; };
 		32CC162AD614E91BA8EF54D504CD6C02 /* NSMutableArray+LPDStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 05890839E464FD6AAFFA9D62EAE004E3 /* NSMutableArray+LPDStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39C4770BE620C1DD020CDDF8A11935E4 /* NSNumber+LPDMoneyAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = C05A844AB12CDA17D34370DEEB6D8722 /* NSNumber+LPDMoneyAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,14 +25,11 @@
 		3FE006B824FBE7CE342A66C123C55C47 /* Pods-LPDAdditionsKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B37153C0445DF6772C03E110A607761 /* Pods-LPDAdditionsKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4399255B5C69B28BDFCA25966DDBF8C0 /* NSObject+LPDSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D77EE1B98331C85B014C47E4C8EE08 /* NSObject+LPDSwizzling.m */; };
 		4D4A53E020384C9C982BA969D399899C /* NSObject+LPDSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFCB10F781D4572C98BD29A63BE55F9 /* NSObject+LPDSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FA8C78BE6801253684C15183EB9D77F /* RSA.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC9DAB38D47D28AA2E264072FE3FBB5 /* RSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		511778A967E2735FD2B8AF11D3B9B815 /* UIView+LPDAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F757001BBF2FB059D22C0AD33ECB38 /* UIView+LPDAccessor.m */; };
 		51B2937E09F2484FD552D6F59461B7AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		538DFE98E0F83816DEC0E2FAFDE01CC1 /* NSMutableArray+LPDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F150DCF82574B53F1B0ACD4BB56C34DB /* NSMutableArray+LPDQueue.m */; };
 		57224BCA581B9C6BA90C6142A9691A34 /* NSCharacterSet+LPDAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 041559815360D49CBDEB4C59B1BE6966 /* NSCharacterSet+LPDAddition.m */; };
 		60D17E266F2AD640646A83EA10748869 /* UIView+LPDAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 510B37D96FAD47A54284FA8FDD4C7634 /* UIView+LPDAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6524DDD87253BDD7BC8DE550617B4163 /* UIScreen+LPDAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 428E1C21E75CF7783659C0AA6D50EDC8 /* UIScreen+LPDAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		653A0931582BC8D78D9492C72A1016BF /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = BC802B631725C1030ACC72A7BC4E743A /* RSA.m */; };
 		6603DE22D772C10C4B10C3D7AAFD3D03 /* NSObject+LPDAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA539D1306D25028B00D8750BD6C0A1 /* NSObject+LPDAssociatedObject.m */; };
 		6605E288E0472D1F5935A96EBD01BC44 /* UIImage+LPDAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E72D44FCADE0CCF0BAA19A5C5B82697 /* UIImage+LPDAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71812A75F01EE585441E3DE390DC5805 /* UIControl+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF8D6B9C2BF5DA229906DB1A140D8AC /* UIControl+Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,16 +96,13 @@
 		2A9A32E7E965D14F62A9FF1B186EF30E /* NSObject+LPDThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LPDThread.m"; sourceTree = "<group>"; };
 		2B37153C0445DF6772C03E110A607761 /* Pods-LPDAdditionsKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LPDAdditionsKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		2CF8D6B9C2BF5DA229906DB1A140D8AC /* UIControl+Block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIControl+Block.h"; sourceTree = "<group>"; };
-		2D68686AC05EF6795AE996480E87AB36 /* LPDLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDLabel.h; sourceTree = "<group>"; };
 		2DB1F8416C58CE4D403AB3A311342D3F /* UINavigationItem+LPDAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+LPDAddition.h"; sourceTree = "<group>"; };
 		314167D47F22E0837B0B0D5251F0A86F /* Pods-LPDAdditionsKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPDAdditionsKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		33F57A38C7D8C3672AF2ACA0D67B7BAC /* NSDate+LPDNSDateRFC1123.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LPDNSDateRFC1123.m"; sourceTree = "<group>"; };
 		3BBCD566A7917FE1290E7D4DED00F2FC /* Pods-LPDAdditionsKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPDAdditionsKit_Example-dummy.m"; sourceTree = "<group>"; };
 		3D320836D1AE0764E12EEC63AFAA8A66 /* Pods-LPDAdditionsKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPDAdditionsKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3F44C48C321DC4CB380911042C8F184A /* NSMutableArray+LPDStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LPDStack.m"; sourceTree = "<group>"; };
-		428E1C21E75CF7783659C0AA6D50EDC8 /* UIScreen+LPDAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScreen+LPDAccessor.h"; sourceTree = "<group>"; };
 		46CCE67130EC48F208E56781EF8885DE /* Pods-LPDAdditionsKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPDAdditionsKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		48DEE64085582D1CBF4DCC87C5E605D2 /* LPDLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDLabel.m; sourceTree = "<group>"; };
 		4D645A989005A5069659A96E8AB70DD2 /* UIButton+LPDSubmitting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+LPDSubmitting.h"; sourceTree = "<group>"; };
 		4F0FC2ECE21D9AF40806442B14B4429D /* UIDevice+LPDAddition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LPDAddition.m"; sourceTree = "<group>"; };
 		510B37D96FAD47A54284FA8FDD4C7634 /* UIView+LPDAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+LPDAccessor.h"; sourceTree = "<group>"; };
@@ -121,7 +112,6 @@
 		60A3FA82430BD1835977AA6BB9D7AEB0 /* UIScrollView+LPDAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LPDAccessor.h"; sourceTree = "<group>"; };
 		63A28A491D8F1BA60760296719EAA682 /* UIImage+LPDAddition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LPDAddition.m"; sourceTree = "<group>"; };
 		66A151638D2B48C40F4B5CBD0E715797 /* UIView+LPDFindSubView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+LPDFindSubView.m"; sourceTree = "<group>"; };
-		67C9708025A2111727FD1B80BC05236B /* UIScreen+LPDAccessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+LPDAccessor.m"; sourceTree = "<group>"; };
 		6E72D44FCADE0CCF0BAA19A5C5B82697 /* UIImage+LPDAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+LPDAddition.h"; sourceTree = "<group>"; };
 		6F6E778343572CB96BEFD086ABC079C1 /* Pods-LPDAdditionsKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPDAdditionsKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7221136CB9AFD92FD3B040E819FB118A /* Pods-LPDAdditionsKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LPDAdditionsKit_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -136,6 +126,7 @@
 		94B72F564821D40E4D85F119B8CEC1A0 /* NSObject+LPDThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LPDThread.h"; sourceTree = "<group>"; };
 		98E2C030FDC2196330A0B1BF2DFC2691 /* NSArray+LPDRandom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+LPDRandom.h"; sourceTree = "<group>"; };
 		997E56D66125158BE5BA9682E5BFE456 /* NSObject+LPDAssociatedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LPDAssociatedObject.h"; sourceTree = "<group>"; };
+		9C4D18E11E891A8D00E647A5 /* LPDMacroPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDMacroPlus.h; sourceTree = "<group>"; };
 		9EADAE0F0E3E8109060FD507244058CD /* Pods-LPDAdditionsKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LPDAdditionsKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9F8F3C95E83E04CEA89431E2F1263158 /* NSString+LPDAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+LPDAddition.h"; sourceTree = "<group>"; };
 		B04BBC353126B53A27652F6BB9E2D533 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,9 +134,7 @@
 		B6AFBB48703214F055A86D36F4A60999 /* NSCharacterSet+LPDAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+LPDAddition.h"; sourceTree = "<group>"; };
 		B6B75698C71E132672D807D83B8DD5A5 /* Pods-LPDAdditionsKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPDAdditionsKit_Example-resources.sh"; sourceTree = "<group>"; };
 		B83DA6CD98A8E8776B21D6B56919C331 /* Pods_LPDAdditionsKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPDAdditionsKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBC9DAB38D47D28AA2E264072FE3FBB5 /* RSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
 		BC061F320CCC3C6F5E85FD1CC0DC34E9 /* LPDAdditionsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPDAdditionsKit-dummy.m"; sourceTree = "<group>"; };
-		BC802B631725C1030ACC72A7BC4E743A /* RSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 		C05A844AB12CDA17D34370DEEB6D8722 /* NSNumber+LPDMoneyAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSNumber+LPDMoneyAddition.h"; sourceTree = "<group>"; };
 		C3637E536F5963C8870170F7046F9CB4 /* NSArray+LPDRandom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LPDRandom.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -252,8 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				1E0F590E24FDBF1D80C23ECBDB6A9722 /* LPDAdditionsKit.h */,
-				2D68686AC05EF6795AE996480E87AB36 /* LPDLabel.h */,
-				48DEE64085582D1CBF4DCC87C5E605D2 /* LPDLabel.m */,
+				9C4D18E11E891A8D00E647A5 /* LPDMacroPlus.h */,
 				98E2C030FDC2196330A0B1BF2DFC2691 /* NSArray+LPDRandom.h */,
 				C3637E536F5963C8870170F7046F9CB4 /* NSArray+LPDRandom.m */,
 				B6AFBB48703214F055A86D36F4A60999 /* NSCharacterSet+LPDAddition.h */,
@@ -276,8 +264,6 @@
 				2A9A32E7E965D14F62A9FF1B186EF30E /* NSObject+LPDThread.m */,
 				9F8F3C95E83E04CEA89431E2F1263158 /* NSString+LPDAddition.h */,
 				DEEBE73D8CD704E8BF9BFD70F75A4FF8 /* NSString+LPDAddition.m */,
-				BBC9DAB38D47D28AA2E264072FE3FBB5 /* RSA.h */,
-				BC802B631725C1030ACC72A7BC4E743A /* RSA.m */,
 				EA74CDD7C9EB54E787F600B92B7713E4 /* UIButton+LPDAddition.h */,
 				1B707EB478374D650CD7E2BC93F9B47F /* UIButton+LPDAddition.m */,
 				4D645A989005A5069659A96E8AB70DD2 /* UIButton+LPDSubmitting.h */,
@@ -292,8 +278,6 @@
 				63A28A491D8F1BA60760296719EAA682 /* UIImage+LPDAddition.m */,
 				2DB1F8416C58CE4D403AB3A311342D3F /* UINavigationItem+LPDAddition.h */,
 				CE90C12A6AB266879E54CFED1785368A /* UINavigationItem+LPDAddition.m */,
-				428E1C21E75CF7783659C0AA6D50EDC8 /* UIScreen+LPDAccessor.h */,
-				67C9708025A2111727FD1B80BC05236B /* UIScreen+LPDAccessor.m */,
 				60A3FA82430BD1835977AA6BB9D7AEB0 /* UIScrollView+LPDAccessor.h */,
 				04AB83E63C6CDBE057146D1A026B52CA /* UIScrollView+LPDAccessor.m */,
 				510B37D96FAD47A54284FA8FDD4C7634 /* UIView+LPDAccessor.h */,
@@ -387,7 +371,6 @@
 			files = (
 				C93DFD23EAD8363D9AD2E673FCC62B72 /* LPDAdditionsKit.h in Headers */,
 				B2E7F733CC66E491C5010FE2AAA182E0 /* LPDAdditionsKit-umbrella.h in Headers */,
-				1922DBA84A224B49D0FBDC8F00323D8F /* LPDLabel.h in Headers */,
 				96132D115A432F8190E7D07ED6E0EF7A /* NSArray+LPDRandom.h in Headers */,
 				9D89CAEDE9C55E76B903877DCB46DB10 /* NSCharacterSet+LPDAddition.h in Headers */,
 				8DE17A789506BC0D7E480DEBC77A0087 /* NSDate+LPDNSDateRFC1123.h in Headers */,
@@ -399,7 +382,6 @@
 				4D4A53E020384C9C982BA969D399899C /* NSObject+LPDSwizzling.h in Headers */,
 				A1AB811A658EEF6B4C230A172EEE0C81 /* NSObject+LPDThread.h in Headers */,
 				D1A2B9DA9216D74AFC891231F61B96D7 /* NSString+LPDAddition.h in Headers */,
-				4FA8C78BE6801253684C15183EB9D77F /* RSA.h in Headers */,
 				29F8F0B3CDA6A4DF8343D5EF92673941 /* UIButton+LPDAddition.h in Headers */,
 				C40645235B69084B6E957FE53B723DCD /* UIButton+LPDSubmitting.h in Headers */,
 				8019CE263C265CB3098B9FE8709393C5 /* UIColor+LPDAddition.h in Headers */,
@@ -407,7 +389,6 @@
 				C10C0B39F53CE8A28D9B6C366B3673E5 /* UIDevice+LPDAddition.h in Headers */,
 				6605E288E0472D1F5935A96EBD01BC44 /* UIImage+LPDAddition.h in Headers */,
 				C80C4FF46D7BB3A963B8A7C742E3D2D4 /* UINavigationItem+LPDAddition.h in Headers */,
-				6524DDD87253BDD7BC8DE550617B4163 /* UIScreen+LPDAccessor.h in Headers */,
 				8107781B6196367F071094CF216AB6F9 /* UIScrollView+LPDAccessor.h in Headers */,
 				60D17E266F2AD640646A83EA10748869 /* UIView+LPDAccessor.h in Headers */,
 				A1E8629821CDDFB7A04C0F5FAC5955E0 /* UIView+LPDBadge.h in Headers */,
@@ -537,7 +518,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C3B33B585A6688DEB587E60ACD6E50 /* LPDAdditionsKit-dummy.m in Sources */,
-				2B734BADB7C2DE01F981BF09F8214C99 /* LPDLabel.m in Sources */,
 				1841EE0D9A010571973D16F8A8CB2703 /* NSArray+LPDRandom.m in Sources */,
 				57224BCA581B9C6BA90C6142A9691A34 /* NSCharacterSet+LPDAddition.m in Sources */,
 				31608A7CF47C57E8BEA3498A9D96B7CD /* NSDate+LPDNSDateRFC1123.m in Sources */,
@@ -549,7 +529,6 @@
 				4399255B5C69B28BDFCA25966DDBF8C0 /* NSObject+LPDSwizzling.m in Sources */,
 				2901578594F90EF5C1F4BE84DB40BAC6 /* NSObject+LPDThread.m in Sources */,
 				03ED91BB8CB6903719221C615439FAC3 /* NSString+LPDAddition.m in Sources */,
-				653A0931582BC8D78D9492C72A1016BF /* RSA.m in Sources */,
 				EDE9C7A35945EF45B7D82C2CEB466646 /* UIButton+LPDAddition.m in Sources */,
 				A737FFFFFC2546D1377CF2C0EC250331 /* UIButton+LPDSubmitting.m in Sources */,
 				799309BA72183C68117EF33D08738799 /* UIColor+LPDAddtion.m in Sources */,
@@ -557,7 +536,6 @@
 				846FD1EEE46BB2A7A18EB5B55C553471 /* UIDevice+LPDAddition.m in Sources */,
 				A6CB913D1639B41EE4F6CE12AFA7D093 /* UIImage+LPDAddition.m in Sources */,
 				137EDE4D46B028AD6B3FFC6F52465871 /* UINavigationItem+LPDAddition.m in Sources */,
-				23F521A9232F251341D0F397F71F826A /* UIScreen+LPDAccessor.m in Sources */,
 				0EB6F4AB90E524305AC36DD19B291AEE /* UIScrollView+LPDAccessor.m in Sources */,
 				511778A967E2735FD2B8AF11D3B9B815 /* UIView+LPDAccessor.m in Sources */,
 				7525AEF198E2A525CC5E1FC3191021B1 /* UIView+LPDBadge.m in Sources */,

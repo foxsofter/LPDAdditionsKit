@@ -4,13 +4,13 @@
 //
 //  Created by foxsofter on 15/11/25.
 //  Copyright © 2015年 foxsofter. All rights reserved.
-//
+//  ************** 得到元素处于随机位置的数组 **************
 
 #import "NSArray+LPDRandom.h"
 
 @implementation NSArray (LPDRandom)
 
-- (NSArray *)randomCopy {
+- (NSArray *)lpd_randomCopy {
   NSMutableArray *mutableArray = [self mutableCopy];
   NSUInteger count = [mutableArray count];
   if (count > 1) {

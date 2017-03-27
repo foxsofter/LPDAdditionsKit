@@ -10,12 +10,12 @@
 
 @implementation UIView (LPDFindSubView)
 
-- (NSArray *)subviewsWithClass:(Class)cls {
+- (NSArray *)lpd_subviewsWithClass:(Class)cls {
   NSMutableArray *subviews = [NSMutableArray array];
   for (UIView *subview in self.subviews) {
     if ([subview isKindOfClass:cls]) {
       [subviews addObject:subview];
-      [subviews addObjectsFromArray:[subview subviewsWithClass:cls]];
+      [subviews addObjectsFromArray:[subview lpd_subviewsWithClass:cls]];
     }
   }
   return subviews;

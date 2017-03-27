@@ -4,7 +4,7 @@
 //
 //  Created by foxsofter on 15/2/23.
 //  Copyright (c) 2015年 foxsofter. All rights reserved.
-//
+//  ************** 为UIControl添加便捷block **************
 
 #import <UIKit/UIKit.h>
 

@@ -4,7 +4,7 @@
 //
 //  Created by foxsofter on 16/2/1.
 //  Copyright © 2016年 eleme. All rights reserved.
-//
+//  ************** 队列 **************
 
 #import <Foundation/Foundation.h>
 
@@ -15,8 +15,8 @@
  */
 @property (nonatomic, assign) NSInteger queueSize;
 
-- (void)enqueueObject:(id)anObject;
+- (void)lpd_enqueueObject:(id)anObject;
 
-- (id)dequeueObject;
+- (id)lpd_dequeueObject;
 
 @end

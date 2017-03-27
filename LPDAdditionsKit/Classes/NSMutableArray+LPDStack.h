@@ -4,16 +4,16 @@
 //
 //  Created by foxsofter on 16/2/1.
 //  Copyright © 2016年 eleme. All rights reserved.
-//
+//  ************** 栈 **************
 
 #import <Foundation/Foundation.h>
 
 @interface NSMutableArray (LPDStack)
 
-- (void)pushObject:(id)anObject;
+- (void)lpd_pushObject:(id)anObject;
 
-- (id)popObject;
+- (id)lpd_popObject;
 
-- (id)peekObject;
+- (id)lpd_peekObject;
 
 @end

@@ -4,7 +4,7 @@
 //
 //  Created by foxsofter on 15/2/23.
 //  Copyright (c) 2015年 foxsofter. All rights reserved.
-//
+//  ************** 为UIControl添加便捷block **************
 
 #import "NSObject+LPDAssociatedObject.h"
 #import "UIControl+Block.h"
@@ -50,11 +50,11 @@
 
 #define UIControlEventImpl(methodName, eventName)                                                                      \
   -(void)methodName : (void (^)(void))eventBlock {                                                                     \
-    [self setCopyNonatomicObject:eventBlock withKey:@selector(methodName:)];                                           \
+    [self lpd_setCopyNonatomicObject:eventBlock withKey:@selector(methodName:)];                                           \
     [self addTarget:self action:@selector(methodName##Action:) forControlEvents:UIControlEvent##eventName];            \
   }                                                                                                                    \
   -(void)methodName##Action : (id)sender {                                                                             \
-    void (^block)() = [self object:@selector(methodName:)];                                                            \
+    void (^block)() = [self lpd_object:@selector(methodName:)];                                                            \
     if (block) {                                                                                                       \
       block();                                                                                                         \
     }                                                                                                                  \

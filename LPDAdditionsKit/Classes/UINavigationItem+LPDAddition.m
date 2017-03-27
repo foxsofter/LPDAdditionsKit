@@ -4,7 +4,7 @@
 //
 //  Created by foxsofter on 15/10/10.
 //  Copyright © 2015年 foxsofter. All rights reserved.
-//
+//  ************** 隐藏导航返回箭头后面的文字 **************
 
 #import "NSObject+LPDSwizzling.h"
 #import "UINavigationItem+LPDAddition.h"
@@ -17,7 +17,7 @@
     SEL oldSelector = @selector(backBarButtonItem);
     SEL newSelector = @selector(ws_backBarButtonItem);
 
-    [self instanceSwizzle:oldSelector newSelector:newSelector];
+    [self lpd_instanceSwizzle:oldSelector newSelector:newSelector];
   });
 }
 

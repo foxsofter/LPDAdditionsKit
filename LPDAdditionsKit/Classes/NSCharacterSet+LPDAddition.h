@@ -10,6 +10,6 @@
 
 @interface NSCharacterSet (LPDAddition)
 
-- (NSSet *)toSet;
+- (NSSet *)lpd_toSet;
 
 @end

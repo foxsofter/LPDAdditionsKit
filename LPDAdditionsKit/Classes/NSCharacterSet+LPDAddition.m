@@ -12,7 +12,7 @@
 
 @implementation NSCharacterSet (LPDAddition)
 
-- (NSSet *)toSet {
+- (NSSet *)lpd_toSet {
   NSData *data = [self bitmapRepresentation];
   uint8_t *ptr = (uint8_t *)[data bytes];
   NSMutableSet *set = [NSMutableSet set];

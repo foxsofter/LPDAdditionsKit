@@ -191,43 +191,43 @@
 #pragma mark - properties
 
 - (CGFloat)borderWidth {
-  return [[self object:@selector(setBorderWidth:)] floatValue];
+  return [[self lpd_object:@selector(setBorderWidth:)] floatValue];
 }
 
 - (void)setBorderWidth:(CGFloat)borderWidth {
-  [self setRetainNonatomicObject:@(borderWidth) withKey:@selector(setBorderWidth:)];
+  [self lpd_setRetainNonatomicObject:@(borderWidth) withKey:@selector(setBorderWidth:)];
 }
 
 - (UIColor *)borderColor {
-  return [self object:@selector(setBorderColor:)];
+  return [self lpd_object:@selector(setBorderColor:)];
 }
 
 - (void)setBorderColor:(UIColor *)borderColor {
-  [self setRetainNonatomicObject:borderColor withKey:@selector(setBorderColor:)];
+  [self lpd_setRetainNonatomicObject:borderColor withKey:@selector(setBorderColor:)];
 }
 
 - (LPDUIViewBorderPosition)borderPosition {
-  return [[self object:@selector(setBorderPosition:)] integerValue];
+  return [[self lpd_object:@selector(setBorderPosition:)] integerValue];
 }
 
 - (void)setBorderPosition:(LPDUIViewBorderPosition)borderPosition {
-  [self setRetainNonatomicObject:@(borderPosition) withKey:@selector(setBorderPosition:)];
+  [self lpd_setRetainNonatomicObject:@(borderPosition) withKey:@selector(setBorderPosition:)];
 }
 
 - (LPDUIViewBorderType)borderType {
-  return [[self object:@selector(setBorderType:)] integerValue];
+  return [[self lpd_object:@selector(setBorderType:)] integerValue];
 }
 
 - (void)setBorderType:(LPDUIViewBorderType)borderType {
-  [self setRetainNonatomicObject:@(borderType) withKey:@selector(setBorderType:)];
+  [self lpd_setRetainNonatomicObject:@(borderType) withKey:@selector(setBorderType:)];
 }
 
 - (CAShapeLayer *)borderLayer {
-  return [self object:@selector(setBorderLayer:)];
+  return [self lpd_object:@selector(setBorderLayer:)];
 }
 
 - (void)setBorderLayer:(CAShapeLayer *)borderLayer {
-  [self setRetainNonatomicObject:borderLayer withKey:@selector(setBorderLayer:)];
+  [self lpd_setRetainNonatomicObject:borderLayer withKey:@selector(setBorderLayer:)];
 }
 
 @end

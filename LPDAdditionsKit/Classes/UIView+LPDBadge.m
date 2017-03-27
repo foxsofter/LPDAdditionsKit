@@ -22,17 +22,17 @@
 #pragma mark - properties
 
 - (BOOL)shouldShowBadge {
-  return [[self object:@selector(setShouldShowBadge:)] boolValue];
+  return [[self lpd_object:@selector(setShouldShowBadge:)] boolValue];
 }
 
 - (void)setShouldShowBadge:(BOOL)shouldShowBadge {
-  [self setRetainNonatomicObject:@(shouldShowBadge) withKey:@selector(setShouldShowBadge:)];
+  [self lpd_setRetainNonatomicObject:@(shouldShowBadge) withKey:@selector(setShouldShowBadge:)];
 
   if (self) {
     if (shouldShowBadge && !self.badgeView) {
       self.badgeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 6, 6)];
       self.badgeView.layer.cornerRadius = 3;
-      self.badgeView.backgroundColor = [UIColor colorWithHexString:@"#FF5E1C"];
+      self.badgeView.backgroundColor = [UIColor lpd_colorWithHexString:@"#FF5E1C"];
       [self addSubview:self.badgeView];
       if (self.badgeConfigBlock) {
         self.badgeConfigBlock(self.badgeView);
@@ -46,19 +46,19 @@
 }
 
 - (void (^)(UIView *))badgeConfigBlock {
-  return [self object:@selector(setBadgeConfigBlock:)];
+  return [self lpd_object:@selector(setBadgeConfigBlock:)];
 }
 
 - (void)setBadgeConfigBlock:(void (^)(UIView *))badgeConfigBlock {
-  [self setCopyNonatomicObject:badgeConfigBlock withKey:@selector(setBadgeConfigBlock:)];
+  [self lpd_setCopyNonatomicObject:badgeConfigBlock withKey:@selector(setBadgeConfigBlock:)];
 }
 
 - (UIView *)badgeView {
-  return [self object:@selector(setBadgeView:)];
+  return [self lpd_object:@selector(setBadgeView:)];
 }
 
 - (void)setBadgeView:(UIView *)badgeView {
-  [self setRetainNonatomicObject:badgeView withKey:@selector(setBadgeView:)];
+  [self lpd_setRetainNonatomicObject:badgeView withKey:@selector(setBadgeView:)];
 }
 
 @end

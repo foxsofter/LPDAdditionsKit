@@ -10,192 +10,101 @@
 
 @implementation UIView (LPDAccessor)
 
-#pragma mark - frame origin
 
-- (CGPoint)origin {
-  return self.frame.origin;
+- (CGFloat)lpd_left {
+    return self.frame.origin.x;
 }
 
-- (void)setOrigin:(CGPoint)newOrigin {
-  CGRect newFrame = self.frame;
-  newFrame.origin = newOrigin;
-  self.frame = newFrame;
+- (void)setLpd_left:(CGFloat)x {
+    CGRect frame = self.frame;
+    frame.origin.x = x;
+    self.frame = frame;
 }
 
-- (CGFloat)x {
-  return self.frame.origin.x;
+- (CGFloat)lpd_top {
+    return self.frame.origin.y;
 }
 
-- (void)setX:(CGFloat)newX {
-  CGRect newFrame = self.frame;
-  newFrame.origin.x = newX;
-  self.frame = newFrame;
+- (void)setLpd_top:(CGFloat)y {
+    CGRect frame = self.frame;
+    frame.origin.y = y;
+    self.frame = frame;
 }
 
-- (CGFloat)y {
-  return self.frame.origin.y;
+- (CGFloat)lpd_right {
+    return self.frame.origin.x + self.frame.size.width;
 }
 
-- (void)setY:(CGFloat)newY {
-  CGRect newFrame = self.frame;
-  newFrame.origin.y = newY;
-  self.frame = newFrame;
+- (void)setLpd_right:(CGFloat)right {
+    CGRect frame = self.frame;
+    frame.origin.x = right - frame.size.width;
+    self.frame = frame;
 }
 
-#pragma mark - frame size
-
-- (CGSize)size {
-  return self.frame.size;
+- (CGFloat)lpd_bottom {
+    return self.frame.origin.y + self.frame.size.height;
 }
 
-- (void)setSize:(CGSize)newSize {
-  CGRect newFrame = self.frame;
-  newFrame.size = newSize;
-  self.frame = newFrame;
+- (void)setLpd_bottom:(CGFloat)bottom {
+    CGRect frame = self.frame;
+    frame.origin.y = bottom - frame.size.height;
+    self.frame = frame;
 }
 
-- (CGFloat)height {
-  return self.frame.size.height;
+- (CGFloat)lpd_width {
+    return self.frame.size.width;
 }
 
-- (void)setHeight:(CGFloat)newHeight {
-  CGRect newFrame = self.frame;
-  newFrame.size.height = newHeight;
-  self.frame = newFrame;
+- (void)setLpd_width:(CGFloat)width {
+    CGRect frame = self.frame;
+    frame.size.width = width;
+    self.frame = frame;
 }
 
-- (CGFloat)width {
-  return self.frame.size.width;
+- (CGFloat)lpd_height {
+    return self.frame.size.height;
 }
 
-- (void)setWidth:(CGFloat)newWidth {
-  CGRect newFrame = self.frame;
-  newFrame.size.width = newWidth;
-  self.frame = newFrame;
+- (void)setLpd_height:(CGFloat)height {
+    CGRect frame = self.frame;
+    frame.size.height = height;
+    self.frame = frame;
 }
 
-#pragma mark - bounds origin
-
-- (CGPoint)boundsOrigin {
-  return self.bounds.origin;
+- (CGFloat)lpd_centerX {
+    return self.center.x;
 }
 
-- (void)setBoundsOrigin:(CGPoint)boundsOrigin {
-  CGRect newBounds = self.bounds;
-  newBounds.origin = boundsOrigin;
-  self.bounds = newBounds;
+- (void)setLpd_centerX:(CGFloat)centerX {
+    self.center = CGPointMake(centerX, self.center.y);
 }
 
-- (CGFloat)boundsX {
-  return self.bounds.origin.x;
+- (CGFloat)lpd_centerY {
+    return self.center.y;
 }
 
-- (void)setBoundsX:(CGFloat)newX {
-  CGRect newBounds = self.bounds;
-  newBounds.origin.x = newX;
-  self.bounds = newBounds;
+- (void)setLpd_centerY:(CGFloat)centerY {
+    self.center = CGPointMake(self.center.x, centerY);
 }
 
-- (CGFloat)boundsY {
-  return self.bounds.origin.y;
+- (CGPoint)lpd_origin {
+    return self.frame.origin;
 }
 
-- (void)setBoundsY:(CGFloat)newY {
-  CGRect newBounds = self.bounds;
-  newBounds.origin.y = newY;
-  self.bounds = newBounds;
+- (void)setLpd_origin:(CGPoint)origin {
+    CGRect frame = self.frame;
+    frame.origin = origin;
+    self.frame = frame;
 }
 
-#pragma mark - bounds size
-
-- (CGSize)boundsSize {
-  return self.bounds.size;
+- (CGSize)lpd_size {
+    return self.frame.size;
 }
 
-- (void)setBoundsSize:(CGSize)newSize {
-  CGRect newBounds = self.bounds;
-  newBounds.size = newSize;
-  self.bounds = newBounds;
-}
-
-- (CGFloat)boundsHeight {
-  return self.bounds.size.height;
-}
-
-- (void)setBoundsHeight:(CGFloat)newHeight {
-  CGRect newBounds = self.bounds;
-  newBounds.size.height = newHeight;
-  self.bounds = newBounds;
-}
-
-- (CGFloat)boundsWidth {
-  return self.bounds.size.width;
-}
-
-- (void)setBoundsWidth:(CGFloat)newWidth {
-  CGRect newBounds = self.bounds;
-  newBounds.size.width = newWidth;
-  self.bounds = newBounds;
-}
-
-#pragma mark - paddings
-
-- (CGFloat)top {
-  return self.bounds.origin.y - self.frame.origin.y;
-}
-
-- (void)setTop:(CGFloat)top {
-  CGRect newBounds = self.bounds;
-  newBounds.origin.y = self.frame.origin.y + top;
-  self.bounds = newBounds;
-}
-
-- (CGFloat)left {
-  return self.bounds.origin.x - self.frame.origin.x;
-}
-
-- (void)setLeft:(CGFloat)left {
-  CGRect newBounds = self.bounds;
-  newBounds.origin.x = self.frame.origin.x + left;
-  self.bounds = newBounds;
-}
-
-- (CGFloat)right {
-  return (self.frame.origin.x + self.frame.size.width) - (self.bounds.origin.x + self.bounds.size.width);
-}
-
-- (void)setRight:(CGFloat)right {
-  CGRect newBounds = self.bounds;
-  newBounds.size.width = self.frame.size.width - right;
-  self.bounds = newBounds;
-}
-
-- (CGFloat)bottom {
-  return (self.frame.origin.y + self.frame.size.height) - (self.bounds.origin.y + self.bounds.size.height);
-}
-
-- (void)setBottom:(CGFloat)bottom {
-  CGRect newBounds = self.bounds;
-  newBounds.size.height = self.frame.size.width - bottom;
-  self.bounds = newBounds;
-}
-
-#pragma mark - center
-
-- (CGFloat)centerX {
-  return self.center.x;
-}
-
-- (void)setCenterX:(CGFloat)newCenterX {
-  self.center = CGPointMake(newCenterX, self.center.y);
-}
-
-- (CGFloat)centerY {
-  return self.center.y;
-}
-
-- (void)setCenterY:(CGFloat)newCenterY {
-  self.center = CGPointMake(self.center.x, newCenterY);
+- (void)setLpd_size:(CGSize)size {
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
 }
 
 @end

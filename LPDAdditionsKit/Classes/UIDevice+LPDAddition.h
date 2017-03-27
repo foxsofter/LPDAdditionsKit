@@ -4,16 +4,17 @@
 //
 //  Created by foxsofter on 15/10/31.
 //  Copyright © 2015年 foxsofter. All rights reserved.
-//
+//  ************** 获取设备名字 **************
+
 
 #import <UIKit/UIKit.h>
 
 @interface UIDevice (LPDAddition)
 
-+ (NSString *)platform;
++ (NSString *)lpd_platform;
 
-+ (BOOL)isSimulator;
++ (BOOL)lpd_isSimulator;
 
-+ (NSString *)platformString;
++ (NSString *)lpd_platformString;
 
 @end

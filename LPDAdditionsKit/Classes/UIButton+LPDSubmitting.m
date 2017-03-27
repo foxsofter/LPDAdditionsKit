@@ -4,11 +4,10 @@
 //
 //  Created by foxsofter on 15/4/2.
 //  Copyright (c) 2015年 foxsofter. All rights reserved.
-//
+//  ************** 为UIButton添加菊花 **************
 
 #import "NSObject+LPDAssociatedObject.h"
 #import "UIButton+LPDSubmitting.h"
-#import "UIScreen+LPDAccessor.h"
 #import "UIView+LPDAccessor.h"
 
 @interface UIButton ()
@@ -21,8 +20,8 @@
 
 @implementation UIButton (LPDSubmitting)
 
-- (void)beginSubmitting:(NSString *)title {
-  [self endSubmitting];
+- (void)lpd_beginSubmitting:(NSString *)title {
+  [self lpd_endSubmitting];
 
   self.submitting = YES;
   self.hidden = YES;
@@ -36,7 +35,7 @@
   CGRect viewBounds = self.modalView.bounds;
   self.spinnerView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
   self.spinnerView.tintColor = self.titleLabel.textColor;
-  self.spinnerView.frame = CGRectMake(10, 5, self.height - 10, self.height - 10);
+  self.spinnerView.frame = CGRectMake(10, 5, self.lpd_height - 10, self.lpd_height - 10);
   [self.modalView addSubview:self.spinnerView];
 
   if (title && title.length > 0) {
@@ -47,19 +46,19 @@
     self.spinnerTitleLabel.textColor = self.titleLabel.textColor;
     [self.modalView addSubview:self.spinnerTitleLabel];
 
-    self.spinnerTitleLabel.x += self.height;
+    self.spinnerTitleLabel.lpd_left += self.lpd_height;
   } else {
-    self.spinnerView.x = self.centerX;
+    self.spinnerView.lpd_left = self.lpd_centerX;
   }
   [self.superview addSubview:self.modalView];
   [self.spinnerView startAnimating];
 }
 
-- (void)beginSubmitting {
-  [self beginSubmitting:nil];
+- (void)lpd_beginSubmitting {
+  [self lpd_beginSubmitting:nil];
 }
 
-- (void)endSubmitting {
+- (void)lpd_endSubmitting {
   if (!self.isSubmitting) {
     return;
   }
@@ -74,35 +73,35 @@
 }
 
 - (BOOL)isSubmitting {
-  return ((NSNumber *)[self object:@selector(setSubmitting:)]).boolValue;
+  return ((NSNumber *)[self lpd_object:@selector(setSubmitting:)]).boolValue;
 }
 
 - (void)setSubmitting:(BOOL)submitting {
-  [self setRetainNonatomicObject:@(submitting) withKey:@selector(setSubmitting:)];
+  [self lpd_setRetainNonatomicObject:@(submitting) withKey:@selector(setSubmitting:)];
 }
 
 - (UIActivityIndicatorView *)spinnerView {
-  return [self object:@selector(setSpinnerView:)];
+  return [self lpd_object:@selector(setSpinnerView:)];
 }
 
 - (void)setSpinnerView:(UIActivityIndicatorView *)spinnerView {
-  [self setRetainNonatomicObject:spinnerView withKey:@selector(setSpinnerView:)];
+  [self lpd_setRetainNonatomicObject:spinnerView withKey:@selector(setSpinnerView:)];
 }
 
 - (UIView *)modalView {
-  return [self object:@selector(setModalView:)];
+  return [self lpd_object:@selector(setModalView:)];
 }
 
 - (void)setModalView:(UIView *)modalView {
-  [self setRetainNonatomicObject:modalView withKey:@selector(setModalView:)];
+  [self lpd_setRetainNonatomicObject:modalView withKey:@selector(setModalView:)];
 }
 
 - (UILabel *)spinnerTitleLabel {
-  return [self object:@selector(setSpinnerTitleLabel:)];
+  return [self lpd_object:@selector(setSpinnerTitleLabel:)];
 }
 
 - (void)setSpinnerTitleLabel:(UILabel *)spinnerTitleLabel {
-  [self setRetainNonatomicObject:spinnerTitleLabel withKey:@selector(setSpinnerTitleLabel:)];
+  [self lpd_setRetainNonatomicObject:spinnerTitleLabel withKey:@selector(setSpinnerTitleLabel:)];
 }
 
 @end

@@ -4,7 +4,7 @@
 //
 //  Created by foxsofter on 15/2/1.
 //  Copyright (c) 2015年 foxsofter. All rights reserved.
-//
+//  ************** 交换方法实现 **************
 
 #import "NSObject+LPDSwizzling.h"
 #import <objc/runtime.h>
@@ -23,7 +23,7 @@
  *  @param oldSelector
  *  @param newSelector
  */
-+ (void)instanceSwizzle:(Class)cls oldSelector:(SEL)oldSelector newSelector:(SEL)newSelector {
++ (void)lpd_instanceSwizzle:(Class)cls oldSelector:(SEL)oldSelector newSelector:(SEL)newSelector {
   Method oldMethod = class_getInstanceMethod(cls, oldSelector);
   Method newMethod = class_getInstanceMethod(cls, newSelector);
 
@@ -41,17 +41,17 @@
  *  @param oldSelector
  *  @param newSelector
  */
-+ (void)classSwizzle:(Class)cls oldSelector:(SEL)oldSelector newSelector:(SEL)newSelector {
++ (void)lpd_classSwizzle:(Class)cls oldSelector:(SEL)oldSelector newSelector:(SEL)newSelector {
   cls = object_getClass(cls);
-  [NSObject instanceSwizzle:cls oldSelector:oldSelector newSelector:newSelector];
+  [NSObject lpd_instanceSwizzle:cls oldSelector:oldSelector newSelector:newSelector];
 }
 
-- (void)instanceSwizzle:(SEL)oldSelector newSelector:(SEL)newSElector {
-  [NSObject instanceSwizzle:[self class] oldSelector:oldSelector newSelector:newSElector];
+- (void)lpd_instanceSwizzle:(SEL)oldSelector newSelector:(SEL)newSElector {
+  [NSObject lpd_instanceSwizzle:[self class] oldSelector:oldSelector newSelector:newSElector];
 }
 
-- (void)classSwizzle:(SEL)oldSelector newSelector:(SEL)newSelector {
-  [NSObject classSwizzle:[self class] oldSelector:oldSelector newSelector:newSelector];
+- (void)lpd_classSwizzle:(SEL)oldSelector newSelector:(SEL)newSelector {
+  [NSObject lpd_classSwizzle:[self class] oldSelector:oldSelector newSelector:newSelector];
 }
 
 @end

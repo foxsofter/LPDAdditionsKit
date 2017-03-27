@@ -4,7 +4,8 @@
 //
 //  Created by foxsofter on 15/10/31.
 //  Copyright © 2015年 foxsofter. All rights reserved.
-//
+//  ************** 获取设备名字 **************
+
 
 #import "UIDevice+LPDAddition.h"
 #include <sys/sysctl.h>
@@ -12,7 +13,7 @@
 
 @implementation UIDevice (LPDAddition)
 
-+ (NSString *)platform {
++ (NSString *)lpd_platform {
   size_t size;
   sysctlbyname("hw.machine", NULL, &size, NULL, 0);
   char *machine = malloc(size);
@@ -22,12 +23,12 @@
   return platform;
 }
 
-+ (BOOL)isSimulator {
-  return [[self platformString] isEqualToString:@"Simulator"];
++ (BOOL)lpd_isSimulator {
+  return [[self lpd_platformString] isEqualToString:@"Simulator"];
 }
 
-+ (NSString *)platformString {
-  NSString *platform = [self platform];
++ (NSString *)lpd_platformString {
+  NSString *platform = [self lpd_platform];
   if ([platform isEqualToString:@"iPhone1,1"])
     return @"iPhone 1G";
   if ([platform isEqualToString:@"iPhone1,2"])

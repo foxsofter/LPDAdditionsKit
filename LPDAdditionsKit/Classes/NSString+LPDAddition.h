@@ -4,21 +4,21 @@
 //
 //  Created by foxsofter on 15/11/26.
 //  Copyright © 2015年 foxsofter. All rights reserved.
-//
+//  ************** 判空，逆置等 **************
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface NSString (LPDAddition)
 
-- (NSString *)reverse;
+- (NSString *)lpd_reverse;
 
-- (NSString *)stringByRemovingWithPattern:(NSString *)patternString;
+- (NSString *)lpd_stringByRemovingWithPattern:(NSString *)patternString;
 
-- (NSMutableAttributedString *)adjustTextColor:(UIColor *)color range:(NSRange)range;
+- (NSMutableAttributedString *)lpd_adjustTextColor:(UIColor *)color range:(NSRange)range;
 
-- (BOOL)isEmpty;
+- (BOOL)lpd_isEmpty;
 
-- (BOOL)containsString:(NSString *)str;
+- (BOOL)lpd_containsString:(NSString *)str;
 
 @end
