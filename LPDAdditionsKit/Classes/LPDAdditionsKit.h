@@ -17,7 +17,6 @@ FOUNDATION_EXPORT const unsigned char LPDAdditionsVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import
 // <LPDAdditions/PublicHeader.h>
 
-#import "LPDLabel.h"
 #import "NSArray+LPDRandom.h"
 #import "NSCharacterSet+LPDAddition.h"
 #import "NSDate+LPDNSDateRFC1123.h"
@@ -32,7 +31,6 @@ FOUNDATION_EXPORT const unsigned char LPDAdditionsVersionString[];
 #import "UIControl+Block.h"
 #import "UIDevice+LPDAddition.h"
 #import "UIImage+LPDAddition.h"
-#import "UIScreen+LPDAccessor.h"
 #import "UIScrollView+LPDAccessor.h"
 #import "UIView+LPDAccessor.h"
 #import "UIView+LPDBorders.h"
