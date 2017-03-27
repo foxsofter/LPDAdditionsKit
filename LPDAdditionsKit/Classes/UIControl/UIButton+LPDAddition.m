@@ -12,7 +12,7 @@
 @implementation UIButton (LPDAddition)
 
 - (void)lpd_setBackgroundColor:(UIColor *)color forState:(UIControlState)state {
-  UIImage *backgroundImage = [UIImage lpd_createImageWithColor:color];
+  UIImage *backgroundImage = [UIImage lpd_createdImageWithColor:color];
   self.clipsToBounds = YES;
   [self setBackgroundImage:backgroundImage forState:state];
 }

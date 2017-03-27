@@ -10,7 +10,7 @@
 
 @implementation UIImage (LPDAddition)
 
-+ (UIImage *)lpd_createImageFromView:(UIView *)sourceView {
++ (UIImage *)lpd_createdImageFromView:(UIView *)sourceView {
   NSParameterAssert(sourceView);
 
   UIGraphicsBeginImageContextWithOptions(sourceView.bounds.size, NO, [UIScreen mainScreen].scale);
@@ -21,11 +21,11 @@
   return image;
 }
 
-+ (UIImage *)lpd_createImageWithColor:(UIColor *)color {
-  return [UIImage lpd_createImageWithColor:color size:CGSizeMake(1.f, 1.f)];
++ (UIImage *)lpd_createdImageWithColor:(UIColor *)color {
+  return [UIImage lpd_createdImageWithColor:color size:CGSizeMake(1.f, 1.f)];
 }
 
-+ (UIImage *)lpd_createImageWithColor:(UIColor *)color size:(CGSize)size {
++ (UIImage *)lpd_createdImageWithColor:(UIColor *)color size:(CGSize)size {
   NSParameterAssert(color);
 
   CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);

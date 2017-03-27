@@ -17,7 +17,7 @@
  *
  *  @return 如果源视图为nil，则返回nil
  */
-+ (UIImage *)lpd_createImageFromView:(UIView *)sourceView;
++ (UIImage *)lpd_createdImageFromView:(UIView *)sourceView;
 
 /**
  *  @brief  根据颜色生成图片，默认size为{1.f, 1.f}
@@ -26,7 +26,7 @@
  *
  *  @return 返回图片
  */
-+ (UIImage *)lpd_createImageWithColor:(UIColor *)color;
++ (UIImage *)lpd_createdImageWithColor:(UIColor *)color;
 
 /**
  *  @brief  根据颜色和传入的size生成图片
@@ -36,7 +36,7 @@
  *
  *  @return 返回图片
  */
-+ (UIImage *)lpd_createImageWithColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)lpd_createdImageWithColor:(UIColor *)color size:(CGSize)size;
 
 /**
  *  @brief 设置图片的透明度
