@@ -2,6 +2,7 @@
 //  LPDAdditions.h
 //  LPDAdditionsKit
 //
+//  Created by foxsofter
 //  reorganized by Assuner
 //  Copyright © 2017年 eleme. All rights reserved.
 //
