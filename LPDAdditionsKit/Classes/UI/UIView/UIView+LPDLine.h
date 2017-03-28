@@ -32,4 +32,7 @@
 
 - (CAShapeLayer *)lpd_addCornerRadius:(CGFloat)cornerRadius lineWidth:(CGFloat)lineWidth color:(UIColor *)borderColor backgroundColor:(UIColor *)backgroundColor;
 
+// 指定倒角
+- (void)lpd_setCornerRadii:(CGFloat)cornerRadii roundingCorners:(UIRectCorner)roundingCorners;
+
 @end

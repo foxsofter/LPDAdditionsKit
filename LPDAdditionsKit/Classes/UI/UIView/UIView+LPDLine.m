@@ -96,5 +96,21 @@ static CGFloat FBRoundPixelValue(CGFloat value)
 }
 
 
+// 指定倒角
+- (void)lpd_setCornerRadii:(CGFloat)cornerRadii roundingCorners:(UIRectCorner)roundingCorners {
+    if (self.layer.mask) {
+        self.layer.mask = nil;
+    }
+    self.layer.masksToBounds = YES;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                                   byRoundingCorners:roundingCorners
+                                                         cornerRadii:CGSizeMake(cornerRadii, cornerRadii)];
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+
 
 @end

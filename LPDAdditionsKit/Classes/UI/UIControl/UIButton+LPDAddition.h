@@ -11,5 +11,5 @@
 @interface UIButton (LPDAddition)
 
 - (void)lpd_setBackgroundColor:(nullable UIColor *)color forState:(UIControlState)state;
-
+- (void)lpd_sizeToText:(CGSize)minSize padding:(UIEdgeInsets)padding;
 @end

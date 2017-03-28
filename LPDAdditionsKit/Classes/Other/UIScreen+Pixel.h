@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, LPDiPhoneScreenSize) {
+    LPDiPhoneScreenSizeUnkown,
+    LPDiPhoneScreenSize35inch,
+    LPDiPhoneScreenSize4inch,
+    LPDiPhoneScreenSize47inch,
+    LPDiPhoneScreenSize55inch,
+};
+
 @interface UIScreen (Pixel)
 
 + (CGFloat)lpd_scale;
@@ -33,5 +41,7 @@
 + (CGFloat)lpd_screenResizeScale;
 
 + (CGFloat)lpd_screenHeightResizeScale;
+
++ (LPDiPhoneScreenSize)lpd_screenSize;
 
 @end

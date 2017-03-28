@@ -30,4 +30,11 @@
 
 @property (nonatomic) CGSize  lpd_size;        ///< Shortcut for frame.size.
 
+
+- (void)lpd_setWidthWithStaticCenter:(CGFloat)width;
+
+- (void)lpd_setHeightWidthStaticCenter:(CGFloat)height;
+
+- (void)lpd_setSizeWithStaticCenter:(CGSize)size;
+
 @end

@@ -8,6 +8,9 @@
 
 #import "UIScreen+Pixel.h"
 
+#define iOSVersionGreaterThan(v)                                                                                       \
+([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+
 @implementation UIScreen (Pixel)
 
 static const CGFloat DefaultScreenWidth = 750.0/2;
@@ -109,5 +112,35 @@ static const CGFloat DefaultScreenHeight = 1134.0/2;
   return resizeScale;
   
 }
+
++ (LPDiPhoneScreenSize)lpdscreenSize {
+    
+    CGFloat screenHeight = 0;
+    
+    if (iOSVersionGreaterThan(@"8")) {
+        
+        UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+        
+        if (orientation == UIDeviceOrientationPortrait)
+            screenHeight = [[UIScreen mainScreen] bounds].size.height;
+        
+        else if ((orientation == UIDeviceOrientationLandscapeRight) || (orientation == UIInterfaceOrientationLandscapeLeft))
+            screenHeight = [[UIScreen mainScreen] bounds].size.width;
+        
+    } else
+        screenHeight = [[UIScreen mainScreen] bounds].size.height;
+    
+    if (screenHeight == 480)
+        return LPDiPhoneScreenSize35inch;
+    else if (screenHeight == 568)
+        return LPDiPhoneScreenSize4inch;
+    else if (screenHeight == 667)
+        return LPDiPhoneScreenSize47inch;
+    else if (screenHeight == 736)
+        return LPDiPhoneScreenSize55inch;
+    else
+        return LPDiPhoneScreenSizeUnkown;
+}
+
 
 @end

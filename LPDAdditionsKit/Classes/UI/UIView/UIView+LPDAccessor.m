@@ -107,4 +107,16 @@
     self.frame = frame;
 }
 
+- (void)lpd_setWidthWithStaticCenter:(CGFloat)width {
+    CGPoint center = self.center;
+    CGFloat height = self.lpd_height;
+    self.frame = CGRectMake(center.x - width / 2, center.y - height / 2, width, height);
+}
+
+- (void)lpd_setHeightWidthStaticCenter:(CGFloat)height {
+    CGPoint center = self.center;
+    CGFloat width = self.lpd_width;
+    self.frame = CGRectMake(center.x - width / 2, center.y - height / 2, width, height);
+}
+
 @end
