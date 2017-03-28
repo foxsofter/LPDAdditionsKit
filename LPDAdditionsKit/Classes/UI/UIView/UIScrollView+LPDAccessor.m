@@ -20,11 +20,11 @@
   return self.contentOffset.y;
 }
 
-- (void)setLpd_ContentOffsetX:(CGFloat)newContentOffsetX {
+- (void)setLpd_contentOffsetX:(CGFloat)newContentOffsetX {
   self.contentOffset = CGPointMake(newContentOffsetX, self.lpd_contentOffsetY);
 }
 
-- (void)setLpd_ContentOffsetY:(CGFloat)newContentOffsetY {
+- (void)setLpd_contentOffsetY:(CGFloat)newContentOffsetY {
   self.contentOffset = CGPointMake(self.lpd_contentOffsetX, newContentOffsetY);
 }
 
@@ -38,11 +38,11 @@
   return self.contentSize.height;
 }
 
-- (void)setLpd_ContentSizeWidth:(CGFloat)newContentSizeWidth {
+- (void)setLpd_contentSizeWidth:(CGFloat)newContentSizeWidth {
   self.contentSize = CGSizeMake(newContentSizeWidth, self.lpd_contentSizeHeight);
 }
 
-- (void)setLpd_ContentSizeHeight:(CGFloat)newContentSizeHeight {
+- (void)setLpd_contentSizeHeight:(CGFloat)newContentSizeHeight {
   self.contentSize = CGSizeMake(self.lpd_contentSizeWidth, newContentSizeHeight);
 }
 
@@ -64,25 +64,25 @@
   return self.contentInset.left;
 }
 
-- (void)setLpd_ContentInsetTop:(CGFloat)newContentInsetTop {
+- (void)setLpd_contentInsetTop:(CGFloat)newContentInsetTop {
   UIEdgeInsets newContentInset = self.contentInset;
   newContentInset.top = newContentInsetTop;
   self.contentInset = newContentInset;
 }
 
-- (void)setLpd_ContentInsetRight:(CGFloat)newContentInsetRight {
+- (void)setLpd_contentInsetRight:(CGFloat)newContentInsetRight {
   UIEdgeInsets newContentInset = self.contentInset;
   newContentInset.right = newContentInsetRight;
   self.contentInset = newContentInset;
 }
 
-- (void)setLpd_ContentInsetBottom:(CGFloat)newContentInsetBottom {
+- (void)setLpd_contentInsetBottom:(CGFloat)newContentInsetBottom {
   UIEdgeInsets newContentInset = self.contentInset;
   newContentInset.bottom = newContentInsetBottom;
   self.contentInset = newContentInset;
 }
 
-- (void)setLpd_ContentInsetLeft:(CGFloat)newContentInsetLeft {
+- (void)setLpd_contentInsetLeft:(CGFloat)newContentInsetLeft {
   UIEdgeInsets newContentInset = self.contentInset;
   newContentInset.left = newContentInsetLeft;
   self.contentInset = newContentInset;
