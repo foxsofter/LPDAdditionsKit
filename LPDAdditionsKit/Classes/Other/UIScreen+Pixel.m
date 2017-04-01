@@ -113,7 +113,7 @@ static const CGFloat DefaultScreenHeight = 1134.0/2;
   
 }
 
-+ (LPDiPhoneScreenSize)lpdscreenSize {
++ (LPDiPhoneScreenSize)lpd_screenSize {
     
     CGFloat screenHeight = 0;
     

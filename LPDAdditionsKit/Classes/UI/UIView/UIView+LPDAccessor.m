@@ -119,4 +119,9 @@
     self.frame = CGRectMake(center.x - width / 2, center.y - height / 2, width, height);
 }
 
+- (void)lpd_setSizeWithStaticCenter:(CGSize)size {
+    CGPoint center = self.center;
+    self.frame = CGRectMake(center.x - size.width / 2, center.y - size.height / 2, size.width, size.height);
+}
+
 @end
