@@ -7,8 +7,12 @@
 //
 
 #import "LPDViewController.h"
+#import <LPDAdditionsKit/LPDAdditionsKit.h>
+#import <LPDAdditionsKit/UIView+LPDBorders.h>
 
 @interface LPDViewController ()
+
+@property (weak, nonatomic) IBOutlet UIView *testView;
 
 @end
 
@@ -16,14 +20,19 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+}
+
+- (void)viewDidLayoutSubviews {
+  [super viewDidLayoutSubviews];
+  [self.testView setLineDashPattern:@[@2,@4]];
+  [self.testView setBorder:1 borderColor:[UIColor redColor] borderType:LPDUIViewBorderTypeDashed];
+	 
 }
 
 @end
