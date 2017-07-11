@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-typedef IMP *IMPPointer;
+typedef IMP _Nullable  * IMPPointer;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (LPDSwizzling)
 
@@ -45,3 +47,5 @@ typedef IMP *IMPPointer;
 - (void)instanceSwizzle:(SEL)oldSelector newSelector:(SEL)newSElector;
 
 @end
+
+NS_ASSUME_NONNULL_END

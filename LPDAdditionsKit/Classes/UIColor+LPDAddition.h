@@ -8,6 +8,8 @@
 
 #import <UIKit/UIColor.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 #define colorFromStringImpl(colorName, colorString)                                                                    \
   +(UIColor *)colorName##Color {                                                                                       \
     static UIColor *color = nil;                                                                                       \
@@ -46,3 +48,5 @@
 - (UIColor *)antiColor;
 
 @end
+
+NS_ASSUME_NONNULL_END
