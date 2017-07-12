@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @brief  交换当前类的实例方法的实现
  *
  *  @param oldSelector  原实例方法的实现
- *  @param newSelector  新实例方法的实现
+ *  @param newSElector  新实例方法的实现
  */
 - (void)instanceSwizzle:(SEL)oldSelector newSelector:(SEL)newSElector;
 

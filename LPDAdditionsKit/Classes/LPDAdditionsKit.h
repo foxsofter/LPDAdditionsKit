@@ -3,6 +3,7 @@
 //  LPDAdditionsKit
 //
 //  Created by foxsofter on 15/12/13.
+//  reorganized by Assuner on 17/07/11
 //  Copyright © 2015年 eleme. All rights reserved.
 //
 
@@ -37,3 +38,11 @@ FOUNDATION_EXPORT const unsigned char LPDAdditionsVersionString[];
 #import "UIView+LPDAccessor.h"
 #import "UIView+LPDBorders.h"
 #import "UIView+LPDFindSubView.h"
+#import "UIView+RedDot.h"
+#import "NSDictionary+StringAscending.h"
+#import "NSObject+Dictionary.h"
+#import "UIView+LPDLine.h"
+#import "UIView+HandyValues.h"
+#import "UIView+CornerRadii.h"
+#import "UIImageView+LPDAnimate.h"
+
