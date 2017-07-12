@@ -34,6 +34,7 @@
 #import "UIDevice+LPDAddition.h"
 #import "UIImage+LPDAddition.h"
 #import "UIImageView+LPDAnimate.h"
+#import "UILabel+adjustSize.h"
 #import "UINavigationItem+LPDAddition.h"
 #import "UIScreen+LPDAccessor.h"
 #import "UIScrollView+LPDAccessor.h"
