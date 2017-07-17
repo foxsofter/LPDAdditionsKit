@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state;
 
++ (UIButton *)buttonWithBackgoundImageName:(NSString *)backgroundImageName;
+
++ (UIButton *)buttonWithImageName:(NSString *)imageName;
+
 @end
 
 NS_ASSUME_NONNULL_END
