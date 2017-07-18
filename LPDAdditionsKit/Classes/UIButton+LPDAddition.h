@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (LPDAddition)
 
-- (void)setBackgroundColor:(UIColor * _Nullable)color forState:(UIControlState)state;
+- (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state;
 
 @end
 
