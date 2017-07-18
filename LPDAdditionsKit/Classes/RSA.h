@@ -5,6 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface RSA : NSObject
 
 // return base64 encoded string
@@ -24,3 +26,5 @@
 + (NSData *)decryptData:(NSData *)data privateKey:(NSString *)privKey;
 
 @end
+
+NS_ASSUME_NONNULL_END
