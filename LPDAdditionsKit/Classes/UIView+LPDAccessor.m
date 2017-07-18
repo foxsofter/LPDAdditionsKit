@@ -176,7 +176,7 @@
 
 - (void)setBottom:(CGFloat)bottom {
   CGRect newBounds = self.bounds;
-  newBounds.size.height = self.frame.size.width - bottom;
+  newBounds.size.height = self.frame.size.height - bottom;
   self.bounds = newBounds;
 }
 

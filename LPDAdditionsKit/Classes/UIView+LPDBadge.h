@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIView (LPDBadge)
 
 /**
@@ -18,6 +20,8 @@
 /**
  *  @brief 配置badge，参数UIView didMoveToSuperview
  */
-@property (nonatomic, copy) void (^badgeConfigBlock)(UIView *);
+@property (nonatomic, copy, nullable) void (^badgeConfigBlock)(UIView *);
 
 @end
+
+NS_ASSUME_NONNULL_END
