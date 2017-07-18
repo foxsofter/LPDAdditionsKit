@@ -47,6 +47,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIColor *)antiColor;
 
+/**
+ *  create color with r g b
+ *
+ *  @param red   0~255
+ *  @param green 0~255
+ *  @param blue  0~255
+ *
+ *  @return
+ */
++ (UIColor *)colorWithRGB:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
+
++ (UIColor *)colorWithRGBA:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
+
 @end
 
 NS_ASSUME_NONNULL_END

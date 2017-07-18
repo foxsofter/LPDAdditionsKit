@@ -27,6 +27,7 @@ FOUNDATION_EXPORT const unsigned char LPDAdditionsVersionString[];
 #import "NSObject+LPDSwizzling.h"
 #import "NSObject+LPDThread.h"
 #import "NSString+LPDAddition.h"
+#import "NSString+URL.h"
 #import "UIButton+LPDAddition.h"
 #import "UIButton+LPDSubmitting.h"
 #import "UIColor+LPDAddition.h"
@@ -44,6 +45,10 @@ FOUNDATION_EXPORT const unsigned char LPDAdditionsVersionString[];
 #import "UIView+LPDLine.h"
 #import "UIView+HandyValues.h"
 #import "UIView+CornerRadii.h"
+#import "UIView+Toast.h"
 #import "UIImageView+LPDAnimate.h"
 #import "UILabel+adjustSize.h"
+#import "NSDate+LPDAddition.h"
+#import "UIViewController+BackButtonHandler.h"
+#import "UINavigationController+LPDBAddition.h"
 

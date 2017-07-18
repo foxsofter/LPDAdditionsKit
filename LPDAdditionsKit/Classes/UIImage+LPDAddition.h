@@ -58,6 +58,32 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage *)resizeTo:(CGSize)size;
 
+/**
+ *  @brief 获取高斯模糊图片
+ *
+ *  @param blur 模糊度
+ *
+ *  @return 返回处理后的图片
+ */
+- (UIImage *)imageWithBlurNumber:(CGFloat)blur;
+
++ (nullable UIImage *)imageCacheWithName:(NSString *)imageName;
+
++ (nullable UIImage *)imageNoCacheWithName:(NSString *)imageName;
+
++ (nullable UIImage *)imageJPGName:(NSString *)imageName;
+
++ (nullable UIImage *)opacityImage:(UIImage *)image opacity:(float)opacity;
+
++ (nullable UIImage *)maskImage:(UIImage *)image withColor:(UIColor *)maskColor;
+
++ (nullable UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+
++ (nullable UIImage *)roundImageWithOriginImage:(UIImage *)image withDiameter:(CGFloat)diameter;
+
++ (nullable UIImage *)roundedRectImageWithColor:(UIColor *)color cornerRadius:(CGFloat)radius size:(CGSize)size;
+
++ (nullable UIImage *)scaleImage:(UIImage *)image toSize:(CGSize)size;
 @end
 
 NS_ASSUME_NONNULL_END

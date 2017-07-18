@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)containsString:(NSString *)str;
 
+- (NSString *)encryptedPhone;
+
 @end
 
 NS_ASSUME_NONNULL_END
