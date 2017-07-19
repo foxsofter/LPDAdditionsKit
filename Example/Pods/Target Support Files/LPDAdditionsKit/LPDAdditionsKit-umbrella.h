@@ -15,6 +15,7 @@
 #import "NSArray+LPDOperation.h"
 #import "NSArray+LPDRandom.h"
 #import "NSCharacterSet+LPDAddition.h"
+#import "NSDate+LPDAddition.h"
 #import "NSDate+LPDNSDateRFC1123.h"
 #import "NSDictionary+StringAscending.h"
 #import "NSMutableArray+LPDQueue.h"
@@ -26,6 +27,7 @@
 #import "NSObject+LPDSwizzling.h"
 #import "NSObject+LPDThread.h"
 #import "NSString+LPDAddition.h"
+#import "NSString+URL.h"
 #import "RSA.h"
 #import "UIButton+LPDAddition.h"
 #import "UIButton+LPDSubmitting.h"
@@ -35,6 +37,7 @@
 #import "UIImage+LPDAddition.h"
 #import "UIImageView+LPDAnimate.h"
 #import "UILabel+adjustSize.h"
+#import "UINavigationController+LPDBAddition.h"
 #import "UINavigationItem+LPDAddition.h"
 #import "UIScreen+LPDAccessor.h"
 #import "UIScrollView+LPDAccessor.h"
@@ -46,6 +49,8 @@
 #import "UIView+LPDFindSubView.h"
 #import "UIView+LPDLine.h"
 #import "UIView+RedDot.h"
+#import "UIView+Toast.h"
+#import "UIViewController+BackButtonHandler.h"
 
 FOUNDATION_EXPORT double LPDAdditionsKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char LPDAdditionsKitVersionString[];
