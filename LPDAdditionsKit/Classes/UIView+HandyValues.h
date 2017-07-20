@@ -9,11 +9,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, LPDOscillatoryAnimationType){
-  LPDOscillatoryAnimationToBigger,
-  LPDOscillatoryAnimationToSmaller,
-};
-
 #define RELATIVE_VALUE(x) (x*[[UIScreen mainScreen] bounds].size.width/375)
 @interface UIView (HandyValues)
 
@@ -27,8 +22,6 @@ typedef NS_ENUM(NSUInteger, LPDOscillatoryAnimationType){
 @property (nonatomic) CGFloat lpd_centerY;     ///< Shortcut for center.y
 @property (nonatomic) CGPoint lpd_origin;      ///< Shortcut for frame.origin.
 @property (nonatomic) CGSize  lpd_size;        ///< Shortcut for frame.size.
-
-+ (void)showOscillatoryAnimationWithLayer:(CALayer *)layer type:(LPDOscillatoryAnimationType)type;
 
 @end
 
