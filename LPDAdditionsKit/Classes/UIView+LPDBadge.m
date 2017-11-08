@@ -36,30 +36,35 @@
     [self setRetainNonatomicObject:@(shouldShowBadge) withKey:@selector(setShouldShowBadge:)];
     
     if (self) {
-        if (shouldShowBadge && !self.badgeView) {
+        if (shouldShowBadge) {
             if(self.badgeString){
-                self.badgeLabel = [[UILabel alloc] init];
-                self.badgeLabel.text = self.badgeString;
-                self.badgeLabel.textAlignment = NSTextAlignmentCenter;
-                self.badgeLabel.textColor = [UIColor whiteColor];
-                self.badgeLabel.font = [UIFont systemFontOfSize:10];
-                self.badgeLabel.layer.cornerRadius = 6;
-                self.badgeLabel.layer.masksToBounds = YES;
-                self.badgeLabel.backgroundColor = [UIColor colorWithHexString:@"#FD3B46"];
-                self.badgeLabel.numberOfLines = 0;
-                [self.badgeLabel sizeToFit];
-                [self addSubview:self.badgeLabel];
-                if (self.badgeConfigBlock) {
-                    self.badgeConfigBlock(self.badgeLabel);
+                if (self.badgeLabel == nil) {
+                    self.badgeLabel = [[UILabel alloc] init];
+                    self.badgeLabel.textAlignment = NSTextAlignmentCenter;
+                    self.badgeLabel.textColor = [UIColor whiteColor];
+                    self.badgeLabel.font = [UIFont systemFontOfSize:10];
+                    self.badgeLabel.layer.cornerRadius = 6;
+                    self.badgeLabel.layer.masksToBounds = YES;
+                    self.badgeLabel.backgroundColor = [UIColor colorWithHexString:@"#FD3B46"];
+                    self.badgeLabel.numberOfLines = 0;
+                    [self addSubview:self.badgeLabel];
+                    if (self.badgeConfigBlock) {
+                        self.badgeConfigBlock(self.badgeLabel);
+                    }
                 }
+                self.badgeLabel.text = self.badgeString;
+                //                [self.badgeLabel sizeToFit];
                 
-            }else{
-                self.badgeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 6, 6)];
-                self.badgeView.layer.cornerRadius = 3;
-                self.badgeView.backgroundColor = [UIColor colorWithHexString:@"#FF5E1C"];
-                [self addSubview:self.badgeView];
-                if (self.badgeConfigBlock) {
-                    self.badgeConfigBlock(self.badgeView);
+            }
+            else {
+                if (self.badgeView == nil) {
+                    self.badgeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 6, 6)];
+                    self.badgeView.layer.cornerRadius = 3;
+                    self.badgeView.backgroundColor = [UIColor colorWithHexString:@"#FF5E1C"];
+                    [self addSubview:self.badgeView];
+                    if (self.badgeConfigBlock) {
+                        self.badgeConfigBlock(self.badgeView);
+                    }
                 }
             }
         }
