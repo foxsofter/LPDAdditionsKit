@@ -60,6 +60,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIColor *)colorWithRGBA:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 
+/**
+ Return a randomColor (just for test UI)
+ 
+ @return randomColor
+ */
++ (UIColor *)randomColor;
+
 @end
 
 NS_ASSUME_NONNULL_END
