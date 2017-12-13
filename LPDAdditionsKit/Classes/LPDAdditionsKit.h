@@ -46,7 +46,6 @@ FOUNDATION_EXPORT const unsigned char LPDAdditionsVersionString[];
 #import "UIView+HandyValues.h"
 #import "UIView+CornerRadii.h"
 #import "UIView+Toast.h"
-#import "UIImageView+LPDAnimate.h"
 #import "UILabel+adjustSize.h"
 #import "NSDate+LPDAddition.h"
 #import "UIViewController+BackButtonHandler.h"

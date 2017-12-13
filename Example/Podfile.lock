@@ -1,16 +1,16 @@
 PODS:
-  - LPDAdditionsKit (0.2.0)
+  - LPDAdditionsKit (0.2.3)
 
 DEPENDENCIES:
   - LPDAdditionsKit (from `../`)
 
 EXTERNAL SOURCES:
   LPDAdditionsKit:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  LPDAdditionsKit: 4b4db7921467c40e93cc8f7cc815850d3b76a5e6
+  LPDAdditionsKit: fd69ed120cb88fd2ef4db9f7ab218a4d3cffc1b1
 
 PODFILE CHECKSUM: 7f223903d63952bae705e44cf59fd87b80350b3b
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0.beta.2
