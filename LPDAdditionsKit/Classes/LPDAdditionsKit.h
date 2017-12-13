@@ -51,4 +51,4 @@ FOUNDATION_EXPORT const unsigned char LPDAdditionsVersionString[];
 #import "NSDate+LPDAddition.h"
 #import "UIViewController+BackButtonHandler.h"
 #import "UINavigationController+LPDBAddition.h"
-
+#import "UIView+GradientBackgroundColor.h"
