@@ -7,6 +7,7 @@
 //
 
 #import "LPDViewController.h"
+#import <LPDAdditionsKit/LPDAdditionsKit.h>
 
 @interface LPDViewController ()
 
