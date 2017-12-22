@@ -38,14 +38,22 @@
 		6F80E5BB5EEEC97C9D7C0D905E8ED71F /* NSObject+LPDAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86854D3BC837CCF5F718063F0FE9E65A /* NSObject+LPDAssociatedObject.m */; };
 		70CB06AF4C9372D6B464581782DECF86 /* NSMutableArray+LPDQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA5370BA952C36B66D9A0D0F5CE2E54 /* NSMutableArray+LPDQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F70262CF6272A9C981AC436070A58B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		826452471FECB72000C1F2DC /* NSDate+LPDAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8264523F1FECB71E00C1F2DC /* NSDate+LPDAddition.h */; };
-		826452481FECB72100C1F2DC /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452401FECB71E00C1F2DC /* UIView+Toast.h */; };
+		826452471FECB72000C1F2DC /* NSDate+LPDAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8264523F1FECB71E00C1F2DC /* NSDate+LPDAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		826452481FECB72100C1F2DC /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452401FECB71E00C1F2DC /* UIView+Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		826452491FECB72100C1F2DC /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452411FECB71F00C1F2DC /* UIView+Toast.m */; };
-		8264524A1FECB72100C1F2DC /* UIViewController+BackButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452421FECB71F00C1F2DC /* UIViewController+BackButtonHandler.h */; };
-		8264524B1FECB72100C1F2DC /* UIView+Rotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452431FECB71F00C1F2DC /* UIView+Rotate.h */; };
+		8264524A1FECB72100C1F2DC /* UIViewController+BackButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452421FECB71F00C1F2DC /* UIViewController+BackButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8264524B1FECB72100C1F2DC /* UIView+Rotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452431FECB71F00C1F2DC /* UIView+Rotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8264524C1FECB72100C1F2DC /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452441FECB71F00C1F2DC /* UIViewController+BackButtonHandler.m */; };
 		8264524D1FECB72100C1F2DC /* NSDate+LPDAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452451FECB72000C1F2DC /* NSDate+LPDAddition.m */; };
 		8264524E1FECB72100C1F2DC /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452461FECB72000C1F2DC /* UIView+Rotate.m */; };
+		826452571FECDAAE00C1F2DC /* UIView+GradientBackgroundColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8264524F1FECDAAC00C1F2DC /* UIView+GradientBackgroundColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		826452581FECDAAE00C1F2DC /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452501FECDAAC00C1F2DC /* NSString+URL.m */; };
+		826452591FECDAAE00C1F2DC /* UIButton+IBDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452511FECDAAC00C1F2DC /* UIButton+IBDesignable.m */; };
+		8264525A1FECDAAE00C1F2DC /* UIView+GradientBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452521FECDAAD00C1F2DC /* UIView+GradientBackgroundColor.m */; };
+		8264525B1FECDAAE00C1F2DC /* UINavigationController+LPDBAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452531FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.m */; };
+		8264525C1FECDAAE00C1F2DC /* UIButton+IBDesignable.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452541FECDAAD00C1F2DC /* UIButton+IBDesignable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8264525D1FECDAAE00C1F2DC /* UINavigationController+LPDBAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452551FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8264525E1FECDAAE00C1F2DC /* NSString+URL.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452561FECDAAD00C1F2DC /* NSString+URL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82E8B8CA24954793659A19E4E9B84789 /* NSObject+LPDSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = CE084315D8CEA28CA7F1A1E74B3A79B9 /* NSObject+LPDSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83849B86E16D81B81F58433DA87C992C /* UIView+LPDBorders.h in Headers */ = {isa = PBXBuildFile; fileRef = 3565F4BBFCC56E0C00DCDDB2F29293E1 /* UIView+LPDBorders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85EB29A5893E3FA3C1F094C47CD7C6C3 /* NSCharacterSet+LPDAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 400A2B16FA15A9000AC06CF8EC1132CE /* NSCharacterSet+LPDAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,6 +173,14 @@
 		826452441FECB71F00C1F2DC /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		826452451FECB72000C1F2DC /* NSDate+LPDAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LPDAddition.m"; sourceTree = "<group>"; };
 		826452461FECB72000C1F2DC /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
+		8264524F1FECDAAC00C1F2DC /* UIView+GradientBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GradientBackgroundColor.h"; sourceTree = "<group>"; };
+		826452501FECDAAC00C1F2DC /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		826452511FECDAAC00C1F2DC /* UIButton+IBDesignable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+IBDesignable.m"; sourceTree = "<group>"; };
+		826452521FECDAAD00C1F2DC /* UIView+GradientBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GradientBackgroundColor.m"; sourceTree = "<group>"; };
+		826452531FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LPDBAddition.m"; sourceTree = "<group>"; };
+		826452541FECDAAD00C1F2DC /* UIButton+IBDesignable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+IBDesignable.h"; sourceTree = "<group>"; };
+		826452551FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LPDBAddition.h"; sourceTree = "<group>"; };
+		826452561FECDAAD00C1F2DC /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
 		8684DE10D1F3A715256C08EE331338D3 /* NSArray+LPDRandom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LPDRandom.m"; sourceTree = "<group>"; };
 		86854D3BC837CCF5F718063F0FE9E65A /* NSObject+LPDAssociatedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LPDAssociatedObject.m"; sourceTree = "<group>"; };
 		89119464DB32D7B16CEC44226580DDB2 /* NSArray+LPDRandom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+LPDRandom.h"; sourceTree = "<group>"; };
@@ -313,6 +329,14 @@
 		C23904CEBF98CB7D6D4C0DCAA3F545DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				826452561FECDAAD00C1F2DC /* NSString+URL.h */,
+				826452501FECDAAC00C1F2DC /* NSString+URL.m */,
+				826452541FECDAAD00C1F2DC /* UIButton+IBDesignable.h */,
+				826452511FECDAAC00C1F2DC /* UIButton+IBDesignable.m */,
+				826452551FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.h */,
+				826452531FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.m */,
+				8264524F1FECDAAC00C1F2DC /* UIView+GradientBackgroundColor.h */,
+				826452521FECDAAD00C1F2DC /* UIView+GradientBackgroundColor.m */,
 				3ABC52E71CB9967498652D212F7CC0F5 /* LPDAdditionsKit.h */,
 				612D5FFAB11C51683DFEFE3151F1FA0B /* LPDLabel.h */,
 				18242D936B3F26FDE6237932EB1362DF /* LPDLabel.m */,
@@ -461,14 +485,18 @@
 			files = (
 				89CB0B64BDD0C7E4F470CB28FDA95F03 /* LPDAdditionsKit-umbrella.h in Headers */,
 				B006B75B704743134F977B17D066291C /* LPDAdditionsKit.h in Headers */,
+				8264525E1FECDAAE00C1F2DC /* NSString+URL.h in Headers */,
 				EBFE4DB400EE3DE8F13A0BCEACC859A6 /* LPDLabel.h in Headers */,
 				CD8F9AF622F72E08C5F319335FB47087 /* NSArray+LPDOperation.h in Headers */,
+				8264525D1FECDAAE00C1F2DC /* UINavigationController+LPDBAddition.h in Headers */,
 				A7587FEEFDF9A7DD57ED612589C53AF4 /* NSArray+LPDRandom.h in Headers */,
 				85EB29A5893E3FA3C1F094C47CD7C6C3 /* NSCharacterSet+LPDAddition.h in Headers */,
+				826452571FECDAAE00C1F2DC /* UIView+GradientBackgroundColor.h in Headers */,
 				9A7F7BD126261C5E6462F3E894D7E53E /* NSDate+LPDNSDateRFC1123.h in Headers */,
 				39DB5206BC44A74BEE898A754E18897C /* NSDictionary+StringAscending.h in Headers */,
 				70CB06AF4C9372D6B464581782DECF86 /* NSMutableArray+LPDQueue.h in Headers */,
 				A7FECAB41758A6C89B3594F613A5B867 /* NSMutableArray+LPDStack.h in Headers */,
+				8264525C1FECDAAE00C1F2DC /* UIButton+IBDesignable.h in Headers */,
 				534D4D7FBD5A8C7698682AB224892B37 /* NSNull+NSNullSafe.h in Headers */,
 				4BB3A2429BDF2E4DF1A24DA996B82DB7 /* NSNumber+LPDMoneyAddition.h in Headers */,
 				BBC33B2ACC97301EEFF9A0E8D1681B06 /* NSObject+Dictionary.h in Headers */,
@@ -597,6 +625,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8264525A1FECDAAE00C1F2DC /* UIView+GradientBackgroundColor.m in Sources */,
+				8264525B1FECDAAE00C1F2DC /* UINavigationController+LPDBAddition.m in Sources */,
 				8EDB6747C559E83327A70993BF4703CA /* LPDAdditionsKit-dummy.m in Sources */,
 				D815CB60AA14EF52D713077F5057ADA1 /* LPDLabel.m in Sources */,
 				8FDB017D092A207F4B9BE37F39563F83 /* NSArray+LPDOperation.m in Sources */,
@@ -610,6 +640,7 @@
 				8264524C1FECB72100C1F2DC /* UIViewController+BackButtonHandler.m in Sources */,
 				FC5A0117CBBCD526A01EDB2173B3A088 /* NSNumber+LPDMoneyAddition.m in Sources */,
 				281630A13F503B37BA41C2F2E9B21D3B /* NSObject+Dictionary.m in Sources */,
+				826452581FECDAAE00C1F2DC /* NSString+URL.m in Sources */,
 				6F80E5BB5EEEC97C9D7C0D905E8ED71F /* NSObject+LPDAssociatedObject.m in Sources */,
 				C5E4633420FF6F5CD66664440953ADF8 /* NSObject+LPDSwizzling.m in Sources */,
 				8264524D1FECB72100C1F2DC /* NSDate+LPDAddition.m in Sources */,
@@ -620,6 +651,7 @@
 				826452491FECB72100C1F2DC /* UIView+Toast.m in Sources */,
 				030643E51C00366E519858545E19C963 /* UIColor+LPDAddtion.m in Sources */,
 				C62C05BDF0A2EF51009E2E355B912167 /* UIControl+Block.m in Sources */,
+				826452591FECDAAE00C1F2DC /* UIButton+IBDesignable.m in Sources */,
 				DB2FEC550269C35CA8CB93C4E5790C0E /* UIDevice+LPDAddition.m in Sources */,
 				DE4334F313218E82B2ED82EDE191B579 /* UIImage+LPDAddition.m in Sources */,
 				8C126DA65DE4EA35FE44C39B24902A52 /* UILabel+adjustSize.m in Sources */,
