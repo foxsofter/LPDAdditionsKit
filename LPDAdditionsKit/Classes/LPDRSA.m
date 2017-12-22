@@ -3,10 +3,10 @@
  @link: https://github.com/ideawu/Objective-C-RSA
 */
 
-#import "RSA.h"
+#import "LPDRSA.h"
 #import <Security/Security.h>
 
-@implementation RSA
+@implementation LPDRSA
 
 /*
 static NSString *base64_encode(NSString *str){
@@ -130,7 +130,7 @@ static NSData *base64_decode(NSString *str) {
 
   // This will be base64 encoded, decode it.
   NSData *data = base64_decode(key);
-  data = [RSA stripPublicKeyHeader:data];
+  data = [LPDRSA stripPublicKeyHeader:data];
   if (!data) {
     return nil;
   }
@@ -190,7 +190,7 @@ static NSData *base64_decode(NSString *str) {
 
   // This will be base64 encoded, decode it.
   NSData *data = base64_decode(key);
-  data = [RSA stripPrivateKeyHeader:data];
+  data = [LPDRSA stripPrivateKeyHeader:data];
   if (!data) {
     return nil;
   }
@@ -270,7 +270,7 @@ static NSData *base64_decode(NSString *str) {
 }
 
 + (NSString *)encryptString:(NSString *)str privateKey:(NSString *)privKey {
-  NSData *data = [RSA encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] privateKey:privKey];
+  NSData *data = [LPDRSA encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] privateKey:privKey];
   NSString *ret = base64_encode_data(data);
   return ret;
 }
@@ -279,11 +279,11 @@ static NSData *base64_decode(NSString *str) {
   if (!data || !privKey) {
     return nil;
   }
-  SecKeyRef keyRef = [RSA addPrivateKey:privKey];
+  SecKeyRef keyRef = [LPDRSA addPrivateKey:privKey];
   if (!keyRef) {
     return nil;
   }
-  return [RSA encryptData:data withKeyRef:keyRef];
+  return [LPDRSA encryptData:data withKeyRef:keyRef];
 }
 
 + (NSData *)decryptData:(NSData *)data withKeyRef:(SecKeyRef)keyRef {
@@ -335,7 +335,7 @@ static NSData *base64_decode(NSString *str) {
 
 + (NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey {
   NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
-  data = [RSA decryptData:data privateKey:privKey];
+  data = [LPDRSA decryptData:data privateKey:privKey];
   NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
   return ret;
 }
@@ -344,11 +344,11 @@ static NSData *base64_decode(NSString *str) {
   if (!data || !privKey) {
     return nil;
   }
-  SecKeyRef keyRef = [RSA addPrivateKey:privKey];
+  SecKeyRef keyRef = [LPDRSA addPrivateKey:privKey];
   if (!keyRef) {
     return nil;
   }
-  return [RSA decryptData:data withKeyRef:keyRef];
+  return [LPDRSA decryptData:data withKeyRef:keyRef];
 }
 
 /* END: Encryption & Decryption with RSA private key */
@@ -356,7 +356,7 @@ static NSData *base64_decode(NSString *str) {
 /* START: Encryption & Decryption with RSA public key */
 
 + (NSString *)encryptString:(NSString *)str publicKey:(NSString *)pubKey {
-  NSData *data = [RSA encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] publicKey:pubKey];
+  NSData *data = [LPDRSA encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] publicKey:pubKey];
   NSString *ret = base64_encode_data(data);
   return ret;
 }
@@ -365,16 +365,16 @@ static NSData *base64_decode(NSString *str) {
   if (!data || !pubKey) {
     return nil;
   }
-  SecKeyRef keyRef = [RSA addPublicKey:pubKey];
+  SecKeyRef keyRef = [LPDRSA addPublicKey:pubKey];
   if (!keyRef) {
     return nil;
   }
-  return [RSA encryptData:data withKeyRef:keyRef];
+  return [LPDRSA encryptData:data withKeyRef:keyRef];
 }
 
 + (NSString *)decryptString:(NSString *)str publicKey:(NSString *)pubKey {
   NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
-  data = [RSA decryptData:data publicKey:pubKey];
+  data = [LPDRSA decryptData:data publicKey:pubKey];
   NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
   return ret;
 }
@@ -383,11 +383,11 @@ static NSData *base64_decode(NSString *str) {
   if (!data || !pubKey) {
     return nil;
   }
-  SecKeyRef keyRef = [RSA addPublicKey:pubKey];
+  SecKeyRef keyRef = [LPDRSA addPublicKey:pubKey];
   if (!keyRef) {
     return nil;
   }
-  return [RSA decryptData:data withKeyRef:keyRef];
+  return [LPDRSA decryptData:data withKeyRef:keyRef];
 }
 
 /* END: Encryption & Decryption with RSA public key */
