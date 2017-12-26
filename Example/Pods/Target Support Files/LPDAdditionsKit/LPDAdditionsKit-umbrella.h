@@ -28,7 +28,7 @@
 #import "NSObject+LPDThread.h"
 #import "NSString+LPDAddition.h"
 #import "NSString+URL.h"
-#import "UIButton+IBDesignable.h"
+#import "UIView+IBDesignable.h"
 #import "UIButton+LPDAddition.h"
 #import "UIButton+LPDSubmitting.h"
 #import "UIColor+LPDAddition.h"

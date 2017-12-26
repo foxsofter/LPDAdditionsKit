@@ -48,10 +48,10 @@
 		8264524E1FECB72100C1F2DC /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452461FECB72000C1F2DC /* UIView+Rotate.m */; };
 		826452571FECDAAE00C1F2DC /* UIView+GradientBackgroundColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8264524F1FECDAAC00C1F2DC /* UIView+GradientBackgroundColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		826452581FECDAAE00C1F2DC /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452501FECDAAC00C1F2DC /* NSString+URL.m */; };
-		826452591FECDAAE00C1F2DC /* UIButton+IBDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452511FECDAAC00C1F2DC /* UIButton+IBDesignable.m */; };
+		826452591FECDAAE00C1F2DC /* UIView+IBDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452511FECDAAC00C1F2DC /* UIView+IBDesignable.m */; };
 		8264525A1FECDAAE00C1F2DC /* UIView+GradientBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452521FECDAAD00C1F2DC /* UIView+GradientBackgroundColor.m */; };
 		8264525B1FECDAAE00C1F2DC /* UINavigationController+LPDBAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826452531FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.m */; };
-		8264525C1FECDAAE00C1F2DC /* UIButton+IBDesignable.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452541FECDAAD00C1F2DC /* UIButton+IBDesignable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8264525C1FECDAAE00C1F2DC /* UIView+IBDesignable.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452541FECDAAD00C1F2DC /* UIView+IBDesignable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8264525D1FECDAAE00C1F2DC /* UINavigationController+LPDBAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452551FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8264525E1FECDAAE00C1F2DC /* NSString+URL.h in Headers */ = {isa = PBXBuildFile; fileRef = 826452561FECDAAD00C1F2DC /* NSString+URL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82E8B8CA24954793659A19E4E9B84789 /* NSObject+LPDSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = CE084315D8CEA28CA7F1A1E74B3A79B9 /* NSObject+LPDSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -175,10 +175,10 @@
 		826452461FECB72000C1F2DC /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
 		8264524F1FECDAAC00C1F2DC /* UIView+GradientBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GradientBackgroundColor.h"; sourceTree = "<group>"; };
 		826452501FECDAAC00C1F2DC /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
-		826452511FECDAAC00C1F2DC /* UIButton+IBDesignable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+IBDesignable.m"; sourceTree = "<group>"; };
+		826452511FECDAAC00C1F2DC /* UIView+IBDesignable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBDesignable.m"; sourceTree = "<group>"; };
 		826452521FECDAAD00C1F2DC /* UIView+GradientBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GradientBackgroundColor.m"; sourceTree = "<group>"; };
 		826452531FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LPDBAddition.m"; sourceTree = "<group>"; };
-		826452541FECDAAD00C1F2DC /* UIButton+IBDesignable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+IBDesignable.h"; sourceTree = "<group>"; };
+		826452541FECDAAD00C1F2DC /* UIView+IBDesignable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBDesignable.h"; sourceTree = "<group>"; };
 		826452551FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LPDBAddition.h"; sourceTree = "<group>"; };
 		826452561FECDAAD00C1F2DC /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
 		8684DE10D1F3A715256C08EE331338D3 /* NSArray+LPDRandom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LPDRandom.m"; sourceTree = "<group>"; };
@@ -331,8 +331,8 @@
 			children = (
 				826452561FECDAAD00C1F2DC /* NSString+URL.h */,
 				826452501FECDAAC00C1F2DC /* NSString+URL.m */,
-				826452541FECDAAD00C1F2DC /* UIButton+IBDesignable.h */,
-				826452511FECDAAC00C1F2DC /* UIButton+IBDesignable.m */,
+				826452541FECDAAD00C1F2DC /* UIView+IBDesignable.h */,
+				826452511FECDAAC00C1F2DC /* UIView+IBDesignable.m */,
 				826452551FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.h */,
 				826452531FECDAAD00C1F2DC /* UINavigationController+LPDBAddition.m */,
 				8264524F1FECDAAC00C1F2DC /* UIView+GradientBackgroundColor.h */,
@@ -496,7 +496,7 @@
 				39DB5206BC44A74BEE898A754E18897C /* NSDictionary+StringAscending.h in Headers */,
 				70CB06AF4C9372D6B464581782DECF86 /* NSMutableArray+LPDQueue.h in Headers */,
 				A7FECAB41758A6C89B3594F613A5B867 /* NSMutableArray+LPDStack.h in Headers */,
-				8264525C1FECDAAE00C1F2DC /* UIButton+IBDesignable.h in Headers */,
+				8264525C1FECDAAE00C1F2DC /* UIView+IBDesignable.h in Headers */,
 				534D4D7FBD5A8C7698682AB224892B37 /* NSNull+NSNullSafe.h in Headers */,
 				4BB3A2429BDF2E4DF1A24DA996B82DB7 /* NSNumber+LPDMoneyAddition.h in Headers */,
 				BBC33B2ACC97301EEFF9A0E8D1681B06 /* NSObject+Dictionary.h in Headers */,
@@ -599,7 +599,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -651,7 +651,7 @@
 				826452491FECB72100C1F2DC /* UIView+Toast.m in Sources */,
 				030643E51C00366E519858545E19C963 /* UIColor+LPDAddtion.m in Sources */,
 				C62C05BDF0A2EF51009E2E355B912167 /* UIControl+Block.m in Sources */,
-				826452591FECDAAE00C1F2DC /* UIButton+IBDesignable.m in Sources */,
+				826452591FECDAAE00C1F2DC /* UIView+IBDesignable.m in Sources */,
 				DB2FEC550269C35CA8CB93C4E5790C0E /* UIDevice+LPDAddition.m in Sources */,
 				DE4334F313218E82B2ED82EDE191B579 /* UIImage+LPDAddition.m in Sources */,
 				8C126DA65DE4EA35FE44C39B24902A52 /* UILabel+adjustSize.m in Sources */,
@@ -776,7 +776,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -784,14 +786,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -924,7 +932,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -932,15 +942,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
