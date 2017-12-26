@@ -9,7 +9,7 @@
 
 IB_DESIGNABLE
 
-@interface UIButton (IBDesignable)
+@interface UIView (IBDesignable)
 
 @property(nonatomic, assign) IBInspectable CGFloat cornerRadius;
 
