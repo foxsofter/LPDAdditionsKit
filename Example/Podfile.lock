@@ -1,5 +1,5 @@
 PODS:
-  - LPDAdditionsKit (0.2.3)
+  - LPDAdditionsKit (0.2.5)
 
 DEPENDENCIES:
   - LPDAdditionsKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LPDAdditionsKit: fd69ed120cb88fd2ef4db9f7ab218a4d3cffc1b1
+  LPDAdditionsKit: fd4d959792d39427e33cc630fb9e2a25b9b03de4
 
 PODFILE CHECKSUM: 7f223903d63952bae705e44cf59fd87b80350b3b
 
