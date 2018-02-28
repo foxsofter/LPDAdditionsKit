@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)showRedDotWithRadius:(CGFloat)radius offsetX:(CGFloat)offsetX offsetY:(CGFloat)offsetY;
 
-- (void)showRedDot;
+- (void)shownRedDot;
 
 - (void)hiddenRedDot;
 

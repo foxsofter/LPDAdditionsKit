@@ -45,7 +45,7 @@
   [self.layer addSublayer:redDotLayer];
 }
 
-- (void)showRedDot {
+- (void)shownRedDot {
   CAShapeLayer *redDot = [self redDot];
   if (redDot) {
     redDot.hidden = NO;
